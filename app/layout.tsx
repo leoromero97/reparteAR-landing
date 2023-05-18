@@ -8,7 +8,7 @@ const poppins = Poppins({
 
 export const metadata = {
   title: 'reparteAR',
-  description: 'Landing page de reparteAR',
+  description: 'Landing page de reparteAR',  
 }
 
 export default function RootLayout({ children }) {
