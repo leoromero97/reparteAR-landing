@@ -3,5 +3,7 @@ export interface IIconProps {
   icon: IconList;
 }
 export type IconList =
-  | 'WhatsApp';
+| 'Close'  
+| 'Menu'
+| 'WhatsApp';
   

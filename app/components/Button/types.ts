@@ -4,20 +4,26 @@ import { IconList } from '../Icon/types';
 
 export type ButtonStatesType = 'default' | 'hover' | 'pressed' | 'disabled';
 
-export type ButtonVariationType = 'primary' | 'fab';
+export type ButtonVariationType = 'primary' | 'text' | 'FAB';
 
 export type ButtonIconPositionType = 'left' | 'right';
 
-export interface IButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
-  children?: string | ReactNode;
+export type ButtonTypes = 'button' | 'submit' | 'reset' | undefined;
+
+export interface IButtonProps {
+  as?: 'button' | 'a';
+  children?: ReactNode;
   className?: string;
+  disabled?: boolean;
+  onClick?: () => void;
   variation?: ButtonVariationType;
   text?: string;
+  title?: string;
   icon?: IconList;
-  iconPosition?: ButtonIconPositionType;
-  disabled?: boolean;
-  to?: never;
-  external?: never;
+  iconPosition?: 'left' | 'right';
+  type?: ButtonTypes;
+  to?: string;
+  external?: boolean;
 }
 
 export interface IAnchorButtonProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
