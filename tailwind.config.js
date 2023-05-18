@@ -36,7 +36,10 @@ module.exports = {
         'skyblue-white': '#F9FDFF',
       },
       fontSize: {
-        'label-medium': ['14px', '21px'],
+        'h2': ['70px', '105px'],
+        'h4': ['30px', '45px'],
+        'subtitle': ['24px', '36px'],
+        'body': ['18px', '27px'],
       }
     },
   },

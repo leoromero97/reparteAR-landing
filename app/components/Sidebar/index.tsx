@@ -2,6 +2,7 @@ import clsx from "clsx";
 
 import Button from "../Button";
 import { navbarLinks } from "../../constants/navbarLinks";
+import { texts } from "../../constants/texts";
 import useMobileDetect from "../../hooks/useMobileDetected";
 import { ISidebarProps } from "./types";
 
@@ -18,6 +19,7 @@ function Sidebar({ className, handleOnClick }: ISidebarProps) {
       {navbarLinks.map((navItem) => (
         <li
           key={navItem.id}
+          title={navItem.title}
           className={clsx(
             'w-full flex items-center rounded hover:bg-skyblue-100 text-lg',
             isMobile ? 'py-4 px-8' : 'p-2 h-12 w-34 text-center',
@@ -28,7 +30,7 @@ function Sidebar({ className, handleOnClick }: ISidebarProps) {
         </li>
       ))}
       <div className={clsx('flex justify-center w-full', isMobile ? 'py-20 px-8' : '')}>
-        <Button text="Pedir envio" icon="WhatsApp" className={isMobile ? 'w-full max-w-sm' : 'min-w-max'} />
+        <Button text={texts.actions.requestTrip} icon="WhatsApp" className={isMobile ? 'w-full max-w-sm' : 'min-w-max'} />
       </div>
     </ul>
   );

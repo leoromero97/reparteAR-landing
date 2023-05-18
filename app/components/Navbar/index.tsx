@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import clsx from 'clsx';
 
 import Icon from '../Icon';
@@ -8,7 +9,6 @@ import { assets } from '../../constants/assets';
 import useMobileDetect from '../../hooks/useMobileDetected';
 
 import { INavbarProps } from './types';
-import Link from 'next/link';
 
 function Navbar({ className }: INavbarProps) {
   const isMobile = useMobileDetect();
@@ -28,8 +28,7 @@ function Navbar({ className }: INavbarProps) {
           <Image
             src={assets.reparteARLogotipo.src}
             alt={assets.reparteARLogotipo.alt}
-            height={assets.reparteARLogotipo.dimensions.height}
-            width={assets.reparteARLogotipo.dimensions.width}
+            className={clsx(isMobile ? 'w-[142px]' : 'w-[261px]')}
           />
         </Link>
         {isMobile ? (
