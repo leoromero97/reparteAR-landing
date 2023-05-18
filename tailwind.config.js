@@ -12,6 +12,12 @@ module.exports = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      borderRadius: {
+        DEFAULT: '4px',
+      },
+      boxShadow: {
+        'drop-3': '0px 2px 16px rgba(6, 22, 28, 0.04)',
+      },
       colors: {
         skyblue: {
           DEFAULT: '#37AAD7',

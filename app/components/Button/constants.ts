@@ -11,7 +11,10 @@ export const buttonStyles: { [key in ButtonVariationType]: string | string[] } =
     'active:bg-skyblue-300',
     'disabled:bg-skyblue-white disabled:cursor-not-allowed',
   ],
-  fab: [
+  text: [
+    'hover:text-skyblue active:font-semibold'
+  ],
+  FAB: [
     baseStyles,
     'shadow-lg'
   ],

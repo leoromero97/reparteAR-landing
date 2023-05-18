@@ -25,6 +25,7 @@ function Button({
     return (
       <Link
         href={to}
+        onClick={onClick}
         className={clsx(
           buttonStyles[variation],
           disabled ? 'pointer-events-none opacity-50' : '',
