@@ -1,34 +1,47 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# reparteAR landing page
 
-## Getting Started
+## Pagina de aterrizaje principal del emprendimiento reparteAR que brinda servicios de envios en CABA y GBA
 
-First, run the development server:
+![cover]![Landing page desktop](https://github.com/leoromero97/reparteAR-landing/assets/57498210/540002e1-8781-4ce1-a31a-6a7a1ff88734)
 
+
+### Descripción general
+Se pide desarrollar una landing page para poder conocer los servicios, el equipo, los testimonios, clientes e informacion importante del emprendimiento reparteAR.
+
+### Tecnologías
+- Next JS
+- Taliwind CSS
+- Vercel
+
+### Librerías
+- clsx
+
+## Configuración de compilación
+
+### Dependencias necesarias
+- Node js
+- npm
+
+### Comandos para correr el proyecto
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+// Instalar dependencias necesarias
+$ npm install
+
+// Levantar y correr el proyecto en http://localhost:3000 o el puerto que este disponible
+$ npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Vista previa
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Deploy 
+[reparteAR en Vercel](https://repartear.vercel.app/)
 
-## Learn More
+### Móvil 
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Escritorio
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### Contacto / Desarrollador
+[Leonardo Romero](https://www.linkedin.com/in/leonardogerbacioromero/)
