@@ -1,5 +1,3 @@
-
-
 import { IComponentIconProps } from './types';
 
 const Menu = ({ className }: IComponentIconProps) => (
