@@ -19,7 +19,7 @@ function Navbar({ className }: INavbarProps) {
 
   return (
     <div className={clsx(
-      'bg-white shadow-drop-3 flex items-center justify-center w-full sticky',
+      'bg-white shadow-drop-3 flex items-center justify-center w-full fixed',
       className,
       menuOpened && 'flex-col z-50  h-screen justify-between'
     )}>
