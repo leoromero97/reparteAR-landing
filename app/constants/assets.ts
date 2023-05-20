@@ -1,5 +1,5 @@
 import logoReparteAR from '@/assets/logos/logo-reparteAR.svg';
-import heroVectorIllustration from '@/assets/vectors/hero-vector.svg';
+import heroVectorIllustration from '@/assets/illustrations/illustration-hero.svg';
 import informationRequiredImage from '@/assets/images/Informacion-necesaria.png';
 import logoTiendaBarbados from '@/assets/logos/logo-Tienda-Barbados.svg';
 import logoPopus from '@/assets/logos/logo-Popus.svg';
@@ -18,6 +18,7 @@ import imageJavi from '@/assets/images/image-javi.png';
 import imageAlvaro from '@/assets/images/image-alvaro.png';
 import imageCami from '@/assets/images/image-cami.png';
 import imageLeo from '@/assets/images/image-leo.png';
+import illustrationBuild from '@/assets/illustrations/illustration-build.svg';
 
 export const assets = {
   logoReparteAR: {
@@ -107,5 +108,9 @@ export const assets = {
   imageLeo: {
     src: imageLeo,
     alt: 'Foto del colaborador Leo',
-  }
+  },
+  illustrationBuild: {
+    src: illustrationBuild,
+    alt: 'Ilustracion del proyecto en construccion',
+  },
 };

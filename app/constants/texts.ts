@@ -126,6 +126,7 @@ export const commonsTexts = {
   theyTrustUs: 'Confian en nosotros',
   us: 'Nosotros',
   usMessage: 'Actualmente somos un equipo de 4 personas con el sueño de seguir creciendo como emprendimiento y brindar más trabajo a más personas',
+  techMessage: 'Estamos en el proceso de creación de nuestra propia plataforma para automatizar procesos internos',
 };
 
 export const texts = {

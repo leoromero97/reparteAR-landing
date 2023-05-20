@@ -1,5 +1,6 @@
 import clsx from "clsx";
 import CollaboratorCard from "@/components/Cards/CollaboratorCard";
+import MessageTech from "@/components/Sections/MessageTech";
 import { collaborators } from "@/constants/collaborators";
 import { texts } from "@/constants/texts";
 import useMobileDetect from "@/hooks/useMobileDetected";
@@ -32,6 +33,7 @@ function UsSection({ className }: IUsSectionProps) {
           ))}
         </div>
       </div>
+      <MessageTech />
     </section>
   );
 }
