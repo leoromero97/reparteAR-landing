@@ -26,8 +26,8 @@ function Navbar({ className }: INavbarProps) {
       <div className='max-w-7xl flex items-center justify-between w-full px-8 py-7'>
         <Link href="/" title='Ir al Home'>
           <Image
-            src={assets.reparteARLogotipo.src}
-            alt={assets.reparteARLogotipo.alt}
+            src={assets.logoReparteAR.src}
+            alt={assets.logoReparteAR.alt}
             className={clsx(isMobile ? 'w-[142px]' : 'w-[261px]')}
           />
         </Link>
