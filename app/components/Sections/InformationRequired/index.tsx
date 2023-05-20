@@ -15,7 +15,7 @@ function InformationRequired() {
         alt={assets.informationRequiredImage.alt}
         className={clsx('rounded-xl shadow-drop-3 shrink-0', isMobile ? 'w-[296px]' : 'w-[540px]')}
       />
-      <div className="flex flex-col gap-6">
+      <div className={clsx('flex flex-col gap-6', isMobile ? 'items-center' : 'items-start')}>
         <span className={clsx(isMobile ? 'text-subtitle text-center' : 'text-h4 font-bold mb-6')}>
           {texts.services.neddedInformation.title}
         </span>

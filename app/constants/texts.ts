@@ -123,6 +123,7 @@ export const servicesTexts = {
 
 export const commonsTexts = {
   testimonials: 'Testimonios',
+  theyTrustUs: 'Confian en nosotros',
 }
 
 export const texts = {
