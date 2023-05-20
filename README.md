@@ -9,8 +9,8 @@
 Se pide desarrollar una landing page para poder conocer los servicios, el equipo, los testimonios, clientes e informacion importante del emprendimiento reparteAR.
 
 ### Tecnologías
-- Next JS
-- Taliwind CSS
+- Next JS v13.4.2
+- Taliwind CSS v3.3.2
 - Vercel
 
 ### Librerías
@@ -19,7 +19,7 @@ Se pide desarrollar una landing page para poder conocer los servicios, el equipo
 ## Configuración de compilación
 
 ### Dependencias necesarias
-- Node js
+- Node JS v16.17.0
 - npm
 
 ### Comandos para correr el proyecto

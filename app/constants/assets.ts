@@ -1,5 +1,6 @@
-import reparteARlogo from '../../public/Logotipo-reparteAR.svg';
-import heroVectorIllustration from '../assets/hero-vector.svg';
+import reparteARlogo from '@/assets/Logotipo-reparteAR.svg';
+import heroVectorIllustration from '@/assets/hero-vector.svg';
+import informationRequiredImage from '@/assets/Informacion-necesaria.png'
 
 export const assets = {
   reparteARLogotipo: {
@@ -17,5 +18,9 @@ export const assets = {
       height: 300.55,
       width: 296,
     }
+  },
+  informationRequiredImage: {
+    src: informationRequiredImage,
+    alt: 'Imagen ilustrativa de una conversacion con la informacion necesaria para un viaje exitoso'
   }
 }
