@@ -27,7 +27,85 @@ export const servicesTexts = {
     collectionProcedures: 'Gestiones de cobranzas',
     proceduresManagement: 'Gestiones de trámites',
     parcelOffices: 'Despachos de encomiendas',
-  }
+  },
+  howWeWork: {
+    title: '¿Cómo trabajamos?',
+    categories: {
+      firstShipment: {
+        title: 'Primer envío',
+        step1: {
+          number: '1',
+          text: 'Nos escribís por WhatsApp'
+        },
+        step2: {
+          number: '2',
+          text: 'Brindas las dos direcciones'
+        },
+        step3: {
+          number: '3',
+          text: 'Cotizamos tu envío',
+        },
+        step4: {
+          number: '4',
+          text: 'Pedimos info necesaria',
+        },
+        step5: {
+          number: '5',
+          text: 'Las motos realizan el viaje',
+        },
+        step6: {
+          number: '6',
+          text: 'Abonas el servicio',
+        },
+      },
+      customer: {
+        title: 'Cliente',
+        step1: {
+          number: '1',
+          text: 'Nos escribís por WhatsApp'
+        },
+        step2: {
+          number: '2',
+          text: 'Brindas info necesaria'
+        },
+        step3: {
+          number: '3',
+          text: 'Las motos realizan el viaje',
+        },
+        step4: {
+          number: '4',
+          text: 'Abonas el servicio',
+        },
+      },
+      moreThanFiveProducts: {
+        title: 'Más de 5 productos por día',
+        step1: {
+          number: '1',
+          text: 'Creamos grupo en WhatsApp'
+        },
+        step2: {
+          number: '2',
+          text: 'Definimos horarios para retirar productos'
+        },
+        step3: {
+          number: '3',
+          text: 'Pasan los viajes en el grupo de WhatsApp',
+        },
+        step4: {
+          number: '4',
+          text: 'Las motos retirar en los horarios definidos',
+        },
+        step5: {
+          number: '5',
+          text: 'Se entregan los productos dentro de las 24 horas',
+        },
+        step6: {
+          number: '6',
+          text: 'Se abona el servicio por quincena o mes',
+        },
+      },
+    }
+  },
 };
 
 export const texts = {

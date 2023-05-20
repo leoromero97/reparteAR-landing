@@ -1,7 +1,7 @@
 import clsx from "clsx";
-import Icon from "../../Icon";
+import Icon from "@/components/Icon";
+import useMobileDetect from "@/hooks/useMobileDetected";
 import { IServiceCardProps } from "./types";
-import useMobileDetect from "../../../hooks/useMobileDetected";
 
 function ServiceCard({ className, icon, title }: IServiceCardProps) {
   const isMobile = useMobileDetect();
@@ -13,7 +13,7 @@ function ServiceCard({ className, icon, title }: IServiceCardProps) {
         className
       )}>
       <Icon icon={icon} className={clsx(isMobile ? 'h-11 w-11' : 'h-20 w-20')} />
-      <span className={clsx(isMobile ? 'text-label-medium font-medium' : 'text-body font-semibold')}>{title}</span>
+      <span className={clsx(isMobile ? 'text-label font-medium' : 'text-body font-semibold')}>{title}</span>
     </div>
   );
 }
