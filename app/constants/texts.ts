@@ -106,6 +106,19 @@ export const servicesTexts = {
       },
     }
   },
+  neddedInformation: {
+    title: 'Información necesaria para un viaje exitoso',
+    destinationAddres: 'Dirección de destino',
+    destinationNeighborhood: 'Barrio de destino',
+    destinationRing: 'Timbre destinatario',
+    destinationPhone: 'Teléfono destinatario',
+    destinationNameOrSurname: 'Nombre/apellido destinatario',
+    deliveryTimeSlot: 'Franja horaria de entrega',
+    quantityOfPackages: 'Cantidad de paquetes',
+    packagesSize: 'Tamaño del paquete',
+    measureAndWeight: 'Medida y peso aproximado',
+    observations: 'Observaciones'
+  }
 };
 
 export const texts = {

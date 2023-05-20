@@ -15,12 +15,12 @@ function HowWeWork() {
   };
 
   return (
-    <div className="flex flex-col max-w-7xl px-8 w-full gap-6 py-24">
-      <span className={clsx(isMobile ? 'text-subtitle' : 'text-h4 font-bold mb-6')}>
+    <div className="flex flex-col max-w-7xl px-8 w-full gap-6 py-10">
+      <span className={clsx(isMobile ? 'text-subtitle text-center' : 'text-h4 font-bold mb-6')}>
         {texts.services.howWeWork.title}
       </span>
       {isMobile ? (
-        <div className="flex flex-col gap-6">
+        <div className="flex flex-col gap-6 items-center">
           <CategoryFilter onChange={handleSelectedId} mapCategoriesSteps={categoriesHowWeWork} />
           <div className="flex flex-col">
             {steps.map((categoryStep) => (
