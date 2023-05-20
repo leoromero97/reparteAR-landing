@@ -124,7 +124,9 @@ export const servicesTexts = {
 export const commonsTexts = {
   testimonials: 'Testimonios',
   theyTrustUs: 'Confian en nosotros',
-}
+  us: 'Nosotros',
+  usMessage: 'Actualmente somos un equipo de 4 personas con el sueño de seguir creciendo como emprendimiento y brindar más trabajo a más personas',
+};
 
 export const texts = {
   actions: actionsTexts,

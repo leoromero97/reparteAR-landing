@@ -1,6 +1,6 @@
 import logoReparteAR from '@/assets/logos/logo-reparteAR.svg';
-import heroVectorIllustration from '@/assets/hero-vector.svg';
-import informationRequiredImage from '@/assets/Informacion-necesaria.png';
+import heroVectorIllustration from '@/assets/vectors/hero-vector.svg';
+import informationRequiredImage from '@/assets/images/Informacion-necesaria.png';
 import logoTiendaBarbados from '@/assets/logos/logo-Tienda-Barbados.svg';
 import logoPopus from '@/assets/logos/logo-Popus.svg';
 import logoSesytel from '@/assets/logos/logo-Sesytel-Solutions.svg';
@@ -14,6 +14,10 @@ import logoAviano from '@/assets/logos/logo-aviano.svg';
 import logoPQC from '@/assets/logos/logo-PQC.svg';
 import logoRosaRomero from '@/assets/logos/logo-Rosa-Romero.svg';
 import logoRetificacionBetEl from '@/assets/logos/logo-Retificación-Bet-el.svg';
+import imageJavi from '@/assets/images/image-javi.png';
+import imageAlvaro from '@/assets/images/image-alvaro.png';
+import imageCami from '@/assets/images/image-cami.png';
+import imageLeo from '@/assets/images/image-leo.png';
 
 export const assets = {
   logoReparteAR: {
@@ -87,5 +91,21 @@ export const assets = {
   logoRetificacionBetEl: {
     src: logoRetificacionBetEl,
     alt: 'Logotipo de Retificacion Bet-el',
+  },
+  imageJavi: {
+    src: imageJavi,
+    alt: 'Foto del colaborador Javier',
+  },
+  imageAlvaro: {
+    src: imageAlvaro,
+    alt: 'Foto del colaborador Alvaro',
+  },
+  imageCami: {
+    src: imageCami,
+    alt: 'Foto de la colaboradora Cami',
+  },
+  imageLeo: {
+    src: imageLeo,
+    alt: 'Foto del colaborador Leo',
   }
 };
