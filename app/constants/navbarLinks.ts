@@ -14,7 +14,7 @@ export const navbarLinks = [
   {
     id: 'us',
     title: texts.navbar.us,
-    href: '#servicios',
+    href: '#nosotros',
   },
   {
     id: 'support',
