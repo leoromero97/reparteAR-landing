@@ -5,6 +5,13 @@
       "dom.iterable",
       "esnext"
     ],
+    "baseUrl": "./app",
+    "paths": {
+      "@/assets/*": ["assets/*"],
+      "@/components/*": ["components/*"],
+      "@/constants/*": ["constants/*"],
+      "@/hooks/*": ["hooks/*"],
+    },
     "allowJs": true,
     "skipLibCheck": true,
     "strict": false,

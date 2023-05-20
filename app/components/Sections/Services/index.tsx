@@ -1,8 +1,9 @@
 import clsx from "clsx";
-import { services } from "../../../constants/services";
-import { texts } from "../../../constants/texts";
-import useMobileDetect from "../../../hooks/useMobileDetected";
-import ServiceCard from "../../Cards/ServiceCard";
+import ServiceCard from "@/components/Cards/ServiceCard";
+import HowWeWork from "@/components/Sections/HowWeWork";
+import { services } from "@/constants/services";
+import { texts } from "@/constants/texts";
+import useMobileDetect from "@/hooks/useMobileDetected";
 
 export interface IServicesProps {
   className?: string;
@@ -21,6 +22,7 @@ function Services({ className }: IServicesProps) {
           ))}
         </div>
       </div>
+      <HowWeWork />
     </section>
   );
 }
