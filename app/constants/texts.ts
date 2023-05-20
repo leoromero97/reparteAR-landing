@@ -121,9 +121,14 @@ export const servicesTexts = {
   }
 };
 
+export const commonsTexts = {
+  testimonials: 'Testimonios',
+}
+
 export const texts = {
   actions: actionsTexts,
-  navbar: navbarTexts,
+  commons: commonsTexts,
   hero: heroTexts,
+  navbar: navbarTexts,
   services: servicesTexts,
 };

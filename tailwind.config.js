@@ -41,10 +41,12 @@ module.exports = {
         'h4': ['30px', '45px'],
         'subtitle': ['24px', '36px'],
         'body': ['18px', '27px'],
+        'body-extra-small': ['10px', '15px'],
         'label': ['14px', '21px'],
       },
       width: {
         'u217': '217px',
+        'u280': '280px',
         'u462': '462px',
       }
     },
