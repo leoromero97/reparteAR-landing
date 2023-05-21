@@ -1,28 +1,14 @@
 import clsx from "clsx";
 
-import Button from "../Button";
-import { navbarLinks } from "../../constants/navbarLinks";
-import { texts } from "../../constants/texts";
-import useMobileDetect from "../../hooks/useMobileDetected";
+import Button from "@/components/Button";
+import { externalLink } from "@/constants/messageExternal";
+import { navbarLinks } from "@/constants/navbarLinks";
+import { texts } from "@/constants/texts";
+import useMobileDetect from "@/hooks/useMobileDetected";
 import { ISidebarProps } from "./types";
 
 function Sidebar({ className, handleOnClick }: ISidebarProps) {
   const isMobile = useMobileDetect();
-  
-  const messageOrderExternal = `Hola reparteAR! Quiero realizar un pedido. Los datos son: \n\n
-  - Dirección de salida: \n
-  - Barrio de salida: \n
-  - Dirección de destino: \n
-  - Barrio de destino: \n
-  - Timbre destinatario: \n
-  - Teléfono destinatario: \n
-  - Nombre/apellido destinatario: \n
-  - Franja horaria de entrega: \n
-  - Cantidad de paquetes: \n
-  - Tamaño del paquete: \n
-  - Medida y peso aproximado: \n
-  - Observaciones: \n`
-  const externalLink = `https://wa.me/541164392829?text=${messageOrderExternal}`
 
   return (
     <ul
