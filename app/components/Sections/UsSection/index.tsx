@@ -14,7 +14,7 @@ function UsSection({ className }: IUsSectionProps) {
   const isMobile = useMobileDetect();
 
   return (
-    <section id="nosotros" className="flex flex-col items-center w-full md:py-20">
+    <section id="nosotros" className="flex flex-col items-center w-full py-20">
       <div className={clsx('flex flex-col max-w-7xl px-8 w-full py-10 gap-6', className, isMobile && 'items-center')}>
         <h3 className={clsx(isMobile ? 'text-subtitle font-bold text-center' : 'text-h3 font-bold mb-6')}>
           {texts.commons.us}

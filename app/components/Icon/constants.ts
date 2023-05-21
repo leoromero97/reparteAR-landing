@@ -1,4 +1,5 @@
 
+import AngleDown from './components/AngleDown';
 import Box from './components/Box';
 import Cart from './components/Cart';
 import ClipboardNote from './components/ClipboardNote';
@@ -18,6 +19,7 @@ import Thunderbolt from './components/Thunderbolt';
 import WhatsApp from './components/WhatsApp';
 
 export const icons = {
+  AngleDown,
   Box,
   Cart,
   ClipboardNote,

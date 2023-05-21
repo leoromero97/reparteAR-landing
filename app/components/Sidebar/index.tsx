@@ -8,6 +8,21 @@ import { ISidebarProps } from "./types";
 
 function Sidebar({ className, handleOnClick }: ISidebarProps) {
   const isMobile = useMobileDetect();
+  
+  const messageOrderExternal = `Hola reparteAR! Quiero realizar un pedido. Los datos son: \n\n
+  - Dirección de salida: \n
+  - Barrio de salida: \n
+  - Dirección de destino: \n
+  - Barrio de destino: \n
+  - Timbre destinatario: \n
+  - Teléfono destinatario: \n
+  - Nombre/apellido destinatario: \n
+  - Franja horaria de entrega: \n
+  - Cantidad de paquetes: \n
+  - Tamaño del paquete: \n
+  - Medida y peso aproximado: \n
+  - Observaciones: \n`
+  const externalLink = `https://wa.me/541164392829?text=${messageOrderExternal}`
 
   return (
     <ul
@@ -30,7 +45,13 @@ function Sidebar({ className, handleOnClick }: ISidebarProps) {
         </li>
       ))}
       <div className={clsx('flex justify-center w-full', isMobile ? 'py-20 px-8' : '')}>
-        <Button text={texts.actions.requestTrip} icon="WhatsApp" className={isMobile ? 'w-full max-w-sm' : 'min-w-max'} />
+        <Button 
+          text={texts.actions.requestTrip}
+          icon="WhatsApp"
+          className={isMobile ? 'w-full max-w-sm' : 'min-w-max'}
+          external
+          to={externalLink}
+        />
       </div>
     </ul>
   );
