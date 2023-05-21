@@ -4,6 +4,7 @@ export interface IIconProps {
 }
 
 export type IconList =
+  | 'AngleDown'
   | 'Box'
   | 'Cart'
   | 'ClipboardNote'

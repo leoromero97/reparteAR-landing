@@ -14,7 +14,7 @@ function Services({ className }: IServicesProps) {
   const isMobile = useMobileDetect();
 
   return (
-    <section id="servicios" className="flex flex-col items-center w-full bg-skyblue-100 md:py-20">
+    <section id="servicios" className="flex flex-col items-center w-full bg-skyblue-100 py-20">
       <div className={clsx('flex flex-col max-w-7xl px-8 w-full py-10', className, isMobile && 'items-center')}>
         <h3 className={clsx(isMobile ? 'text-subtitle font-bold text-center' : 'text-h3 font-bold mb-6')}>
           {texts.services.titleServices}

@@ -30,7 +30,7 @@ function Footer({ className }: IFooterProps) {
             </span>
             <ul className="flex items-center gap-4">
               {socialNetworks.map(({ href, icon, id, name }) => (
-                <a key={id} href={href} target="_blank" title={name}>
+                <a key={id} href={href} target="_blank" title={name} className="md:hover:text-skyblue">
                   <Icon icon={icon} className={isMobile ? 'w-6 h-6' : 'w-11 h-11'} />
                 </a>
               ))}
@@ -46,7 +46,7 @@ function Footer({ className }: IFooterProps) {
         <a
           href="https://www.linkedin.com/in/leonardogerbacioromero/"
           target="_blank"
-          className="flex flex-col items-center gap-2"
+          className="flex flex-col items-center gap-2 md:hover:text-skyblue"
         >
           <span className="text-label font-bold">
             {texts.commons.didYouLikeThisLandingPage}

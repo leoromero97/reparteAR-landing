@@ -1,5 +1,6 @@
 export const actionsTexts = {
-  requestTrip: 'Pedir envío'
+  requestTrip: 'Pedir envío',
+  makeInquiry: 'Realizar consulta',
 };
 
 export const navbarTexts = {
@@ -125,6 +126,8 @@ export const commonsTexts = {
   allRightsReserved: 'Todos los derechos reservados',
   didYouLikeThisLandingPage: '¿Te gustó esta landing page?',
   developmentBy: 'Desarrollado por Leonardo Esteban Gerbacio Romero',
+  doYouHaveAnyDoubtWriteUs: '¿Tenés algunda duda? ¡Escribinos!',
+  frequentQuestions: 'Preguntas frecuentes',
   followUs: 'Seguinos',
   testimonials: 'Testimonios',
   theyTrustUs: 'Confian en nosotros',

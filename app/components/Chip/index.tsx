@@ -12,15 +12,21 @@ function Chip({ className, isActive = false, onclick, text }: IChipProps) {
         px-4 
         rounded-lg 
         border 
-        hover:bg-skyblue-200
-        hover:text-skyblue-600`,
+        md:hover:bg-skyblue-200
+        md:hover:text-skyblue-600
+        active:bg-skyblue-200
+        active:text-skyblue-100`,
         className,
         isActive ? 'bg-skyblue-600 text-skyblue-100 border-skyblue-100' :
-          'border-skyblue-600 text-skyblue-600 bg-skyblue-200',
+          'border-skyblue-600 text-skyblue-100 bg-skyblue-200',
       )}
       onClick={onclick}
     >
-      <span className={clsx('text-label hover:text-skyblue-600', isActive ? 'text-skyblue-100' : 'text-skyblue-600')}>
+      <span className={clsx(
+        'text-label md:hover:text-skyblue-600',
+        isActive ? 'text-skyblue-100' : 'text-skyblue-600'
+      )}
+      >
         {text}
       </span>
     </button>
