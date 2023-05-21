@@ -5,6 +5,7 @@ import Navbar from '@/components/Navbar'
 import Services from '@/components/Sections/Services';
 import Testimonials from '@/components/Sections/Testimonials';
 import UsSection from '@/components/Sections/UsSection';
+import Footer from '@/components/Footer/indext';
 
 export default function Home() {
 
@@ -15,6 +16,7 @@ export default function Home() {
       <Services />
       <Testimonials />
       <UsSection />
+      <Footer />
     </main>
   )
 }

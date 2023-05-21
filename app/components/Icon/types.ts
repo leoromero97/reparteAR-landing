@@ -11,9 +11,13 @@ export type IconList =
   | 'Close'
   | 'Commerce'
   | 'DocumentInfo'
+  | 'Facebook'
   | 'Home'
+  | 'Instagram'
+  | 'LinkedIn'
   | 'Menu'
   | 'MercadoEnviosFlex'
   | 'MoneyBillStack'
+  | 'ReparteAR'
   | 'Thunderbolt'
   | 'WhatsApp';
