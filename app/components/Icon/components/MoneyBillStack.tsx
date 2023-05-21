@@ -14,7 +14,6 @@ const MonyBillStack = ({ className }: IComponentIconProps) => (
       fill="currentColor"
     />
   </svg>
-
 );
 
 export default MonyBillStack;

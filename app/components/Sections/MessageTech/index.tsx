@@ -1,10 +1,19 @@
 import Image from "next/image";
 import { assets } from "@/constants/assets";
 import { texts } from "@/constants/texts";
+import useMobileDetect from "@/hooks/useMobileDetected";
+import clsx from "clsx";
 
 function MessageTech() {
+  const isMobile = useMobileDetect();
+
   return (
-    <div className="flex flex-col md:flex-row items-center max-w-7xl px-8 w-full gap-6 md:gap-12 py-10 md:py-20">
+    <div
+      className={clsx(
+        'flex items-center max-w-7xl px-8 w-full gap-12',
+        isMobile ? 'flex-col py-10' : 'flex-row py-20', 
+      )}
+    >
       <span className="text-subtitle font-medium text-center md:text-start md:text-h3 md:font-bold">
         {texts.commons.techMessage}
       </span>

@@ -122,11 +122,15 @@ export const servicesTexts = {
 };
 
 export const commonsTexts = {
+  allRightsReserved: 'Todos los derechos reservados',
+  didYouLikeThisLandingPage: '¿Te gustó esta landing page?',
+  developmentBy: 'Desarrollado por Leonardo Esteban Gerbacio Romero',
+  followUs: 'Seguinos',
   testimonials: 'Testimonios',
   theyTrustUs: 'Confian en nosotros',
+  techMessage: 'Estamos en el proceso de creación de nuestra propia plataforma para automatizar procesos internos',
   us: 'Nosotros',
   usMessage: 'Actualmente somos un equipo de 4 personas con el sueño de seguir creciendo como emprendimiento y brindar más trabajo a más personas',
-  techMessage: 'Estamos en el proceso de creación de nuestra propia plataforma para automatizar procesos internos',
 };
 
 export const texts = {
