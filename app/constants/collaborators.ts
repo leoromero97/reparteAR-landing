@@ -14,10 +14,6 @@ export const collaborators = [
   },
   {
     id: '2',
-    image: {
-      src: assets.imageAlvaro.src,
-      alt: assets.imageAlvaro.alt,
-    },
     name: 'Alvaro',
     roles: [
       'Repartidor',

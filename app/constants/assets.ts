@@ -1,6 +1,6 @@
 import logoReparteAR from '@/assets/logos/logo-reparteAR.svg';
 import heroVectorIllustration from '@/assets/illustrations/illustration-hero.svg';
-import informationRequiredImage from '@/assets/images/Informacion-necesaria.png';
+import informationRequiredImage from '@/assets/images/Informacion-necesaria.jpg';
 import logoTiendaBarbados from '@/assets/logos/logo-Tienda-Barbados.svg';
 import logoPopus from '@/assets/logos/logo-Popus.svg';
 import logoSesytel from '@/assets/logos/logo-Sesytel-Solutions.svg';

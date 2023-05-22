@@ -8,7 +8,7 @@ function OurClients() {
   const isMobile = useMobileDetect();
 
   return (
-    <div className="flex flex-col max-w-7xl px-8 w-full gap-6 py-10">
+    <div className="flex flex-col max-w-7xl px-8 w-full gap-6 pt-10">
       <span className={clsx(isMobile ? 'text-subtitle text-center' : 'text-h4 font-bold mb-6')}>
         {texts.commons.theyTrustUs}
       </span>

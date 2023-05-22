@@ -16,6 +16,7 @@ import MercadoEnviosFlex from './components/MercadoEnviosFlex';
 import MoneyBillStack from './components/MoneyBillStack';
 import ReparteAR from './components/ReparteAR';
 import Thunderbolt from './components/Thunderbolt';
+import User from './components/User';
 import WhatsApp from './components/WhatsApp';
 
 export const icons = {
@@ -36,5 +37,6 @@ export const icons = {
   MoneyBillStack,
   ReparteAR,
   Thunderbolt,
+  User,
   WhatsApp,
 };

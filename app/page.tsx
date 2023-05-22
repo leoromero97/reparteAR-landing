@@ -25,11 +25,11 @@ export default function Home() {
       <UsSection />
       <SupportSection />
       {isMobile && (
-        <div className="flex justify-center w-full py-2 fixed top-[86%] z-30">
+        <div className="flex justify-center w-full py-2 px-8 fixed top-[86%] z-30">
           <Button
             text={texts.actions.requestTrip}
             icon="WhatsApp"
-            className="w-full max-w-sm"
+            className="w-full max-w-sm shadow-drop-1"
             external
             to={externalLink}
           />
