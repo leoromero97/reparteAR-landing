@@ -4,21 +4,21 @@ export const navbarLinks = [
   {
     id: 'services',
     title: texts.navbar.services,
-    href: '#servicios',
+    href: '/#servicios',
   },
   {
     id: 'testimonials',
     title: texts.navbar.testimonials,
-    href: '#testimonios',
+    href: '/#testimonios',
   },
   {
     id: 'us',
     title: texts.navbar.us,
-    href: '#nosotros',
+    href: '/#nosotros',
   },
   {
     id: 'support',
     title: texts.navbar.support,
-    href: '#soporte',
+    href: '/#soporte',
   },
 ];

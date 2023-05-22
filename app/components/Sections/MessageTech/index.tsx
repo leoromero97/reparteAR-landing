@@ -11,7 +11,7 @@ function MessageTech() {
 
   return (
     <div
-      className="flex flex-col items-center max-w-7xl px-8 w-full gap-12 md:gap-20 py-10">
+      className="flex flex-col items-center max-w-8xl px-8 w-full gap-12 md:gap-20 py-10">
       <div className={clsx('flex w-full items-center gap-12', isMobile ? 'flex-col text-center' : 'flex-row text-start')}>
         <span className="text-subtitle font-medium md:text-h3 md:font-bold">
           {texts.commons.techMessage}
@@ -25,7 +25,6 @@ function MessageTech() {
           <Button
             text={texts.actions.requestTrip}
             icon="WhatsApp"
-            className="w-full max-w-sm"
             external
             to={externalLink}
           />

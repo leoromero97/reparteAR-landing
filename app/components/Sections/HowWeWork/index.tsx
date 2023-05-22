@@ -15,7 +15,7 @@ function HowWeWork() {
   };
 
   return (
-    <div className="flex flex-col max-w-7xl px-8 w-full gap-6 py-10">
+    <div className="flex flex-col max-w-8xl px-8 w-full gap-6 py-10">
       <span className={clsx(isMobile ? 'text-subtitle text-center' : 'text-h4 font-bold mb-6')}>
         {texts.services.howWeWork.title}
       </span>
@@ -44,7 +44,7 @@ function HowWeWork() {
           </div>
         </div>
       ) : (
-        <div className="flex gap-7 justify-between">
+        <div className="flex gap-7 justify-between w-full">
           {categoriesHowWeWork.map((category) => (
             <div key={category.id} className="flex flex-col items-center py-10 px-6 gap-6 bg-white shadow-drop-3 rounded-xl w-u462">
               <span className="text-subtitle font-bold">{category.title}</span>

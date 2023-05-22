@@ -20,11 +20,16 @@ function Testimonials({ className }: ITestimonialsProps) {
         isMobile ? 'pt-20 pb-10' : 'py-40',
       )}
     >
-      <div className={clsx('flex flex-col max-w-7xl px-8 w-full py-10', className, isMobile && 'items-center')}>
+      <div className={clsx('flex flex-col max-w-8xl px-8 w-full py-10', className, isMobile && 'items-center')}>
         <h3 className={clsx(isMobile ? 'text-subtitle font-bold text-center' : 'text-h3 font-bold mb-6')}>
           {texts.commons.testimonials}
         </h3>
-        <div className={clsx('flex w-full py-6 overflow-y-hidden', isMobile ? 'overflow-scroll px-3 gap-4' : 'flex-wrap gap-6')}>
+        <div
+          className={clsx(
+            'flex w-full py-6 overflow-y-hidden',
+            isMobile ? 'overflow-scroll px-3 gap-4' : 'flex-wrap gap-6 justify-between'
+          )}
+        >
           {testimonialsByClients.map(({ id, name, message }) => (
             <TestimonialCard key={id} message={message} name={name} />
           ))}

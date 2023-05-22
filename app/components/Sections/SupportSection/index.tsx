@@ -26,7 +26,7 @@ function SupportSection() {
         isMobile ? 'pt-20 pb-10' : 'py-40',
       )}
     >
-      <div className={clsx('flex flex-col max-w-7xl px-8 w-full gap-10', isMobile && 'items-center')}>
+      <div className={clsx('flex flex-col max-w-8xl px-8 w-full gap-10', isMobile && 'items-center')}>
         <h3 className={clsx(isMobile ? 'text-subtitle font-bold text-center' : 'text-h3 font-bold mb-6')}>
           {texts.commons.frequentQuestions}
         </h3>
