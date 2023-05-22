@@ -11,11 +11,7 @@ function MessageTech() {
 
   return (
     <div
-      className={clsx(
-        'flex flex-col items-center max-w-7xl px-8 w-full gap-12',
-        isMobile ? 'py-10' : 'py-20',
-      )}
-    >
+      className="flex flex-col items-center max-w-7xl px-8 w-full gap-12 md:gap-20 py-10">
       <div className={clsx('flex w-full items-center gap-12', isMobile ? 'flex-col text-center' : 'flex-row text-start')}>
         <span className="text-subtitle font-medium md:text-h3 md:font-bold">
           {texts.commons.techMessage}

@@ -9,8 +9,8 @@ import useMobileDetect from "@/hooks/useMobileDetected";
 function SupportSection() {
   const isMobile = useMobileDetect();
   const [showAnswer, setShowAnswer] = useState(false);
-  const messageOrderExternal = `Hola reparteAR! Tengo una consulta :)`;
-  const externalLink = `https://wa.me/541164392829?text=${messageOrderExternal}`;
+  const messageExternal = `Hola reparteAR! Tengo una consulta :)`;
+  const externalLink = `https://wa.me/541164392829?text=${messageExternal}`;
 
   const handleOnChange = (id: string) => {
     if (id) {
@@ -19,8 +19,14 @@ function SupportSection() {
   };
 
   return (
-    <section id="soporte" className="flex flex-col items-center w-full py-20">
-      <div className={clsx('flex flex-col max-w-7xl px-8 w-full py-10 gap-10', isMobile && 'items-center')}>
+    <section
+      id="soporte"
+      className={clsx(
+        'flex flex-col items-center w-full',
+        isMobile ? 'pt-20 pb-10' : 'py-40',
+      )}
+    >
+      <div className={clsx('flex flex-col max-w-7xl px-8 w-full gap-10', isMobile && 'items-center')}>
         <h3 className={clsx(isMobile ? 'text-subtitle font-bold text-center' : 'text-h3 font-bold mb-6')}>
           {texts.commons.frequentQuestions}
         </h3>
@@ -49,7 +55,7 @@ function SupportSection() {
             ))}
           </div>
         )}
-        <div className="flex flex-col items-center gap-5 w-full">
+        <div className="flex flex-col items-center gap-5 w-full md:pt-10">
           <span className={clsx(isMobile ? 'text-label font-normal' : 'font-semibold')}>
             {texts.commons.doYouHaveAnyDoubtWriteUs}
           </span>

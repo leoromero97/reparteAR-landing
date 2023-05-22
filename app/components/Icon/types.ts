@@ -21,4 +21,5 @@ export type IconList =
   | 'MoneyBillStack'
   | 'ReparteAR'
   | 'Thunderbolt'
+  | 'User'
   | 'WhatsApp';

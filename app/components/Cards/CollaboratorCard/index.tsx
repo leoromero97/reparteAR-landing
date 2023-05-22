@@ -1,14 +1,17 @@
 import Image from "next/image";
 import clsx from "clsx";
 import { ICollaboratorCardProps } from "./types";
+import Icon from "@/components/Icon";
 
 function CollaboratorCard({ className, name, image, roles }: ICollaboratorCardProps) {
   return (
     <div className={clsx('w-[276px] md:w-60 rounded-xl py-4 px-2 gap-2 bg-white shadow-drop-3 flex flex-col shrink-0 items-center', className)}>
-      {image?.src && (
+      {image?.src ? (
         <div className="w-20 h-20 md:w-[140px] md:h-[140px] flex">
-          <Image src={image.src} alt={image.alt} className="border-2 border-skyblue rounded-full" />
+          <Image src={image.src} alt={image.alt} className="border-8 border-skyblue rounded-full" />
         </div>
+      ) : (
+        <Icon icon="User" className="w-20 h-20 md:w-[140px] md:h-[140px] text-skyblue border-8 border-skyblue rounded-full" />
       )}
       <span className="text-body font-semibold text-skyblue md:text-subtitle">
         {name}
