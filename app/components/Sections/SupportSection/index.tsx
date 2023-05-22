@@ -27,9 +27,9 @@ function SupportSection() {
       )}
     >
       <div className={clsx('flex flex-col max-w-8xl px-8 w-full gap-10', isMobile && 'items-center')}>
-        <h3 className={clsx(isMobile ? 'text-subtitle font-bold text-center' : 'text-h3 font-bold mb-6')}>
+        <span className={clsx(isMobile ? 'text-subtitle font-bold text-center' : 'text-h3 font-bold mb-6')}>
           {texts.commons.frequentQuestions}
-        </h3>
+        </span>
         {isMobile ? (
           <div className="flex flex-col gap-5 w-full">
             {FAQs.map(({ answer, id, question }) => (

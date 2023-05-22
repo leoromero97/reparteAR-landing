@@ -28,9 +28,9 @@ function UsSection({ className }: IUsSectionProps) {
           isMobile && 'items-center',
         )}
       >
-        <h3 className={clsx(isMobile ? 'text-subtitle font-bold text-center' : 'text-h3 font-bold mb-6')}>
+        <span className={clsx(isMobile ? 'text-subtitle font-bold text-center' : 'text-h3 font-bold mb-6')}>
           {texts.commons.us}
-        </h3>
+        </span>
         <span className="text-body md:text-subtitle">
           {texts.commons.usMessage}
         </span>

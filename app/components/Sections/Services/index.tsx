@@ -17,14 +17,14 @@ function Services({ className }: IServicesProps) {
     <section
       id="servicios"
       className={clsx(
-        'flex flex-col items-center w-full bg-skyblue-100 ',
+        'flex flex-col items-center w-full',
         isMobile ? 'pt-20 pb-10' : 'py-40',
       )}
     >
       <div className={clsx('flex flex-col max-w-8xl px-8 w-full py-10', className, isMobile && 'items-center')}>
-        <h3 className={clsx(isMobile ? 'text-subtitle font-bold text-center' : 'text-h3 font-bold mb-6')}>
+        <span className={clsx(isMobile ? 'text-subtitle font-bold text-center' : 'text-h3 font-bold mb-6')}>
           {texts.services.titleServices}
-        </h3>
+        </span>
         <div
           className={clsx(
             'flex w-full py-6 overflow-y-hidden',
