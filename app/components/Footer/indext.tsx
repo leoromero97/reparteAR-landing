@@ -31,8 +31,8 @@ function Footer({ className }: IFooterProps) {
             <ul className="flex items-center gap-4">
 
               {socialNetworks.map(({ href, icon, id, name }) => (
-                <li>
-                  <a key={id} href={href} target="_blank" title={name} className="md:hover:text-skyblue">
+                <li key={id}>
+                  <a href={href} target="_blank" title={name} className="md:hover:text-skyblue">
                     <Icon icon={icon} className={isMobile ? 'w-6 h-6' : 'w-11 h-11'} />
                   </a>
                 </li>
