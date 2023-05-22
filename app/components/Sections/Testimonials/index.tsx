@@ -21,9 +21,9 @@ function Testimonials({ className }: ITestimonialsProps) {
       )}
     >
       <div className={clsx('flex flex-col max-w-8xl px-8 w-full py-10', className, isMobile && 'items-center')}>
-        <h3 className={clsx(isMobile ? 'text-subtitle font-bold text-center' : 'text-h3 font-bold mb-6')}>
+        <span className={clsx(isMobile ? 'text-subtitle font-bold text-center' : 'text-h3 font-bold mb-6')}>
           {texts.commons.testimonials}
-        </h3>
+        </span>
         <div
           className={clsx(
             'flex w-full py-6 overflow-y-hidden',

@@ -21,17 +21,17 @@ function InformationRequired() {
         </span>
         <ul>
           {deliveryRequiredInformation.map((information, index) => (
-            <div key={information.id} className="flex flex-col">
-              <li className="flex items-center gap-3">
+            <li key={information.id} className="flex flex-col">
+              <div className="flex items-center gap-3">
                 <span className="h-4 w-4 rounded-full bg-skyblue-900 shrink-0 flex"></span>
                 <span className="text-label font-medium md:text-body">{information.text}</span>
-              </li>
+              </div>
               {(deliveryRequiredInformation.length - 1 !== index) && (
                 <div className="flex h-4 w-4 items-center justify-center">
                   <span className="h-4 w-[1px] bg-skyblue-900 flex"></span>
                 </div>
               )}
-            </div>
+            </li>
           ))}
         </ul>
       </div>
