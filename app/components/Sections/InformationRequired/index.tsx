@@ -9,7 +9,7 @@ function InformationRequired() {
   const isMobile = useMobileDetect();
 
   return (
-    <div className="flex flex-col md:flex-row-reverse items-center max-w-7xl px-8 w-full gap-6 py-10">
+    <div className="flex flex-col md:flex-row-reverse items-center max-w-8xl px-8 w-full gap-6 py-10 justify-between">
       <Image
         src={assets.informationRequiredImage.src}
         alt={assets.informationRequiredImage.alt}

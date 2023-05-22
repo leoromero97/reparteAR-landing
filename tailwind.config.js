@@ -45,6 +45,9 @@ module.exports = {
         'body-extra-small': ['10px', '15px'],
         'label': ['14px', '21px'],
       },
+      maxWidth: {
+        '8xl': '88rem',
+      },
       width: {
         'u217': '217px',
         'u280': '280px',

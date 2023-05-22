@@ -32,10 +32,6 @@ export const assets = {
   heroVector: {
     src: heroVectorIllustration,
     alt: 'Ilustracion personalizada de reparteAR',
-    dimensions: {
-      height: 300.55,
-      width: 296,
-    }
   },
   informationRequiredImage: {
     src: informationRequiredImage,

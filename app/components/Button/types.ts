@@ -4,7 +4,7 @@ import { IconList } from '../Icon/types';
 
 export type ButtonStatesType = 'default' | 'hover' | 'pressed' | 'disabled';
 
-export type ButtonVariationType = 'primary' | 'text' | 'FAB';
+export type ButtonVariationType = 'primary' | 'FAB';
 
 export type ButtonIconPositionType = 'left' | 'right';
 
