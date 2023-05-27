@@ -15,7 +15,6 @@ import useMobileDetect from './hooks/useMobileDetected';
 export default function Home() {
   const isMobile = useMobileDetect();
 
-
   return (
     <main className="flex flex-col items-center w-full h-auto min-h-screen">
       <Navbar />
