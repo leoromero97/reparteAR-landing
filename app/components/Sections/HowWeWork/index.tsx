@@ -20,8 +20,12 @@ function HowWeWork() {
         {texts.services.howWeWork.title}
       </span>
       {isMobile ? (
-        <div className="flex flex-col gap-6 items-center">
-          <CategoryFilter onChange={handleSelectedId} mapCategoriesSteps={categoriesHowWeWork} />
+        <div className="flex flex-col gap-6">
+          <CategoryFilter
+            onChange={handleSelectedId}
+            mapCategoriesSteps={categoriesHowWeWork}
+            className="justify-center"
+          />
           <div className="flex flex-col">
             {steps.map((categoryStep) => (
               <ul key={categoryStep.id} className="flex flex-col gap-4">
@@ -46,7 +50,7 @@ function HowWeWork() {
       ) : (
         <div className="flex gap-7 justify-between w-full">
           {categoriesHowWeWork.map((category) => (
-            <div key={category.id} className="flex flex-col items-center py-10 px-6 gap-6 bg-white shadow-drop-3 rounded-xl w-u462">
+            <div key={category.id} className="flex flex-col py-10 px-6 gap-6 bg-white shadow-drop-3 rounded-xl w-u462">
               <span className="text-subtitle font-bold">{category.title}</span>
               <ul className="flex flex-col gap-4 w-full">
                 {category.steps.map((stepDescription) => (

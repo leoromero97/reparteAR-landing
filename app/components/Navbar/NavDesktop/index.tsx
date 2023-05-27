@@ -1,11 +1,11 @@
+import Link from "next/link";
+import Image from "next/image";
+import clsx from "clsx";
 import Button from "@/components/Button";
 import { assets } from "@/constants/assets";
 import { externalLink } from "@/constants/messageExternal";
 import { navbarLinks } from "@/constants/navbarLinks";
 import { texts } from "@/constants/texts";
-import clsx from "clsx";
-import Image from "next/image";
-import Link from "next/link";
 
 function NavDesktop() {
   return (
@@ -27,13 +27,13 @@ function NavDesktop() {
               key={navItem.id}
               title={navItem.title}
               className={clsx(
-                'w-full flex items-center rounded hover:bg-skyblue-100 text-lg p-2 h-12 w-34 text-center ease-in-out duration-300',
+                'w-full flex items-center',
               )}
             >
               <Link
                 href={navItem.href}
                 scroll={false}
-                className="w-full hover:text-skyblue active:font-semibold text-sm font-medium ease-in-out duration-300"
+                className="w-full hover:text-skyblue active:font-semibold font-medium ease-in-out duration-300 hover:bg-skyblue-100 rounded text-lg p-2 h-12 w-34 text-center"
               >
                 {navItem.title}
               </Link>

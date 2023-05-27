@@ -1,4 +1,5 @@
 export interface ICategoryFilterProps {
+  className?: string;
   mapCategoriesSteps?: ICategoryStep[];
   onChange?: (id: string) => void;
 }

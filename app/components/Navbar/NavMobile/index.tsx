@@ -45,16 +45,13 @@ function NavMobile({ menuOpened, onClick } : INavMobileProps) {
               <li
                 key={navItem.id}
                 title={navItem.title}
-                className={clsx(
-                  'w-full flex items-center rounded hover:bg-skyblue-100 text-lg ease-in-out duration-300',
-                  'py-4 px-8',
-                )}
+                className="w-full flex items-center rounded hover:bg-skyblue-100 text-lg ease-in-out duration-300 py-4 px-8"
                 onClick={onClick}
               >
                 <Link
                   href={navItem?.href}
                   scroll={false}
-                  className="w-full hover:text-skyblue active:font-semibold text-sm font-medium ease-in-out duration-300"
+                  className="w-full hover:text-skyblue active:font-semibold text-body font-medium ease-in-out duration-300"
                 >
                   {navItem.title}
                 </Link>
