@@ -2,7 +2,7 @@
 
 ## Pagina de aterrizaje principal del emprendimiento reparteAR que brinda servicios de envios en CABA y GBA
 
-![cover]![Landing page desktop](https://github.com/leoromero97/reparteAR-landing/assets/57498210/540002e1-8781-4ce1-a31a-6a7a1ff88734)
+![Landing page desktop](https://github.com/leoromero97/reparteAR-landing/assets/57498210/540002e1-8781-4ce1-a31a-6a7a1ff88734)
 
 
 ### Descripción general
@@ -35,7 +35,7 @@ $ npm run dev
 ## Vista previa
 
 ### Deploy 
-[reparteAR en Vercel](https://repartear.vercel.app/)
+[reparteAR en Vercel](https://reparteartest.vercel.app/)
 
 ### Móvil 
 
