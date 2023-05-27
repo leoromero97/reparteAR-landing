@@ -1,7 +1,7 @@
 import { useState } from "react";
 import clsx from "clsx";
 import Button from "@/components/Button";
-import DropdownQuestion from "@/components/DropdownQuestion";
+import Accordion from "@/components/Accordion";
 import { FAQs } from "@/constants/FAQ";
 import { texts } from "@/constants/texts";
 import useMobileDetect from "@/hooks/useMobileDetected";
@@ -31,21 +31,22 @@ function SupportSection() {
           {texts.commons.frequentQuestions}
         </span>
         {isMobile ? (
-          <div className="flex flex-col gap-5 w-full">
+          <div className="flex flex-col gap-5 w-full items-center">
             {FAQs.map(({ answer, id, question }) => (
-              <DropdownQuestion
+              <Accordion
                 key={id}
                 id={id}
                 answer={answer}
                 question={question}
                 onChange={() => handleOnChange(id)}
+                className="max-w-md w-full"
               />
             ))}
           </div>
         ) : (
           <div className="grid grid-cols-3 gap-x-20 gap-y-5">
             {FAQs.map(({ answer, id, question }) => (
-              <DropdownQuestion
+              <Accordion
                 key={id}
                 id={id}
                 answer={answer}

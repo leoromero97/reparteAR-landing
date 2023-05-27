@@ -18,9 +18,9 @@ function Footer({ className }: IFooterProps) {
       className="bg-skyblue-200 w-full flex flex-col items-center"
     >
       <div className={clsx(
-        'flex flex-col max-w-8xl px-8 w-full p-8',
+        'flex flex-col max-w-8xl w-full p-8',
         className,
-        isMobile ? 'items-center gap-12' : 'justify-between'
+        isMobile ? 'items-center gap-12 py-32' : 'justify-between'
       )}
       >
         <div className="flex flex-col md:flex-row md:justify-between w-full gap-12 md:py-20">
