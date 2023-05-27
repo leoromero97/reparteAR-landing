@@ -36,7 +36,7 @@ function Testimonials({ className }: ITestimonialsProps) {
               message={message}
               name={name}
               href={href}
-              className="h-64"
+              className={isMobile ? 'h-46' : 'h-64'}
             />
           ))}
         </div>

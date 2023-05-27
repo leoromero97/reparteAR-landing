@@ -1,9 +1,10 @@
 import { useState } from "react";
+import clsx from "clsx";
 import Chip from "@/components/Chip";
 
 import { ICategoryFilterProps } from "./types";
 
-function CategoryFilter({ mapCategoriesSteps, onChange }: ICategoryFilterProps) {
+function CategoryFilter({ className, mapCategoriesSteps, onChange }: ICategoryFilterProps) {
   const [categoryIdSteps, setCategoryIdSteps] = useState<string>('firstShipment');
   const categories = mapCategoriesSteps.map((category) => {
     return {
@@ -19,7 +20,7 @@ function CategoryFilter({ mapCategoriesSteps, onChange }: ICategoryFilterProps) 
   };
 
   return (
-    <div className="flex flex-wrap gap-6">
+    <div className={clsx('flex flex-wrap gap-6', className)}>
       {categories.map(({ id, title, isActive }) => {
         return <Chip key={id} text={title} isActive={isActive} onclick={() => handleOnChange(id)} />
       })}

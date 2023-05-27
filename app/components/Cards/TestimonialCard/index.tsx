@@ -14,7 +14,8 @@ function TestimonialCard({ className, message, name, href }: ITestomonialCardPro
         rounded-xl 
         py-4 
         px-2 
-        gap-5 
+        gap-3
+        md:gap-5 
         bg-white 
         shadow-drop-3 
         flex 
