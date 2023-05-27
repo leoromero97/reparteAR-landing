@@ -1,15 +1,15 @@
 import { useEffect, useRef, useState } from "react";
 import clsx from "clsx";
 import Icon from "@/components/Icon";
-import { IDropdownQuestionProps } from "./types";
+import { IAccordionProps } from "./types";
 
-function DropdownQuestion({
+function Accordion({
   answer,
   className,
   id,
   onChange,
   question,
-}: IDropdownQuestionProps) {
+}: IAccordionProps) {
   const [open, setOpen] = useState(false);
   const wrapperRef = useRef<HTMLButtonElement>(null);
 
@@ -55,4 +55,4 @@ function DropdownQuestion({
   );
 }
 
-export default DropdownQuestion;
+export default Accordion;

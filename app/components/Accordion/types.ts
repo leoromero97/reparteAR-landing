@@ -1,4 +1,4 @@
-export interface IDropdownQuestionProps {
+export interface IAccordionProps {
   answer: string;
   className?: string;
   id: string;

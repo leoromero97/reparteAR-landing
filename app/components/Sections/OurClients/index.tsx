@@ -13,15 +13,20 @@ function OurClients() {
         {texts.commons.theyTrustUs}
       </span>
       <div className={clsx('flex w-full py-6 overflow-y-hidden', isMobile ? 'overflow-scroll px-3 gap-4' : 'flex-wrap gap-14')}>
-        {clients.map((client) => (
-          <div key={client.id} className="flex w-14 md:w-28 h-14 md:h-28 shadow-drop-3 rounded-full shrink-0">
+        {clients.map(({ href, id, logo}) => (
+          <a
+            href={href}
+            target="_blank"
+            key={id}
+            className="flex w-14 md:w-28 h-14 md:h-28 shadow-drop-3 rounded-full shrink-0"
+          >
             <Image
-              src={client.logo.src}
-              alt={client.logo.alt}
-              title={client.logo.alt}
+              src={logo.src}
+              alt={logo.alt}
+              title={logo.alt}
               className="object-cover"
             />
-          </div>
+          </a>
         ))}
       </div>
     </div>

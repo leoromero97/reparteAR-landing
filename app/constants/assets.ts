@@ -14,6 +14,7 @@ import logoAviano from '@/assets/logos/logo-aviano.svg';
 import logoPQC from '@/assets/logos/logo-PQC.svg';
 import logoRosaRomero from '@/assets/logos/logo-Rosa-Romero.svg';
 import logoRetificacionBetEl from '@/assets/logos/logo-Retificación-Bet-el.svg';
+import logoMacarenaAlzaga from '@/assets/logos/logo-Macarena-Alzaga.svg';
 import imageJavi from '@/assets/images/image-javi.png';
 import imageAlvaro from '@/assets/images/image-alvaro.png';
 import imageCami from '@/assets/images/image-cami.png';
@@ -88,6 +89,10 @@ export const assets = {
   logoRetificacionBetEl: {
     src: logoRetificacionBetEl,
     alt: 'Logotipo de Retificacion Bet-el',
+  },
+  logoMacarenaAlzaga: {
+    src: logoMacarenaAlzaga,
+    alt: 'Logotipo de Macarena Alzaga',
   },
   imageJavi: {
     src: imageJavi,
