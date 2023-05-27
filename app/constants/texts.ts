@@ -1,6 +1,7 @@
 export const actionsTexts = {
   requestTrip: 'Pedir envío',
   makeInquiry: 'Realizar consulta',
+  goToMainPage: 'Ir a la página principal'
 };
 
 export const navbarTexts = {
@@ -136,10 +137,16 @@ export const commonsTexts = {
   usMessage: 'Actualmente somos un equipo de 4 personas con el sueño de seguir creciendo como emprendimiento y brindar más trabajo a más personas',
 };
 
+export const notFoundTexts = {
+  title: 'Ups! error 404',
+  description: 'No podemos encontrar la página que buscas, te recomendamos volver a la página principal',
+}
+
 export const texts = {
   actions: actionsTexts,
   commons: commonsTexts,
   hero: heroTexts,
   navbar: navbarTexts,
+  notFound: notFoundTexts,
   services: servicesTexts,
 };

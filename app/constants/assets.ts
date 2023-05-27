@@ -19,6 +19,7 @@ import userJavi from '@/assets/users/user-javi.svg';
 import userCami from '@/assets/users/user-cami.svg';
 import userLeo from '@/assets/users/user-leo.svg';
 import userInfoNecesaria from '@/assets/users/user-info-necesaria.svg';
+import illustrationWebSearching from '@/assets/illustrations/illustration-web-searching.svg';
 
 export const assets = {
   logoReparteAR: {
@@ -108,5 +109,9 @@ export const assets = {
   illustrationBuild: {
     src: illustrationBuild,
     alt: 'Ilustracion del proyecto en construccion',
+  },
+  illustrationWebSearching: {
+    src: illustrationWebSearching,
+    alt: 'Ilustracion de persona buscando una web',
   },
 };
