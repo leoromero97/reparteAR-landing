@@ -1,6 +1,5 @@
 import logoReparteAR from '@/assets/logos/logo-reparteAR.svg';
 import heroVectorIllustration from '@/assets/illustrations/illustration-hero.svg';
-import informationRequiredImage from '@/assets/images/Informacion-necesaria.jpg';
 import logoTiendaBarbados from '@/assets/logos/logo-Tienda-Barbados.svg';
 import logoPopus from '@/assets/logos/logo-Popus.svg';
 import logoSesytel from '@/assets/logos/logo-Sesytel-Solutions.svg';
@@ -15,10 +14,6 @@ import logoPQC from '@/assets/logos/logo-PQC.svg';
 import logoRosaRomero from '@/assets/logos/logo-Rosa-Romero.svg';
 import logoRetificacionBetEl from '@/assets/logos/logo-Retificación-Bet-el.svg';
 import logoMacarenaAlzaga from '@/assets/logos/logo-Macarena-Alzaga.svg';
-import imageJavi from '@/assets/images/image-javi.png';
-import imageAlvaro from '@/assets/images/image-alvaro.png';
-import imageCami from '@/assets/images/image-cami.png';
-import imageLeo from '@/assets/images/image-leo.png';
 import illustrationBuild from '@/assets/illustrations/illustration-build.svg';
 
 export const assets = {
@@ -35,7 +30,7 @@ export const assets = {
     alt: 'Ilustracion personalizada de reparteAR',
   },
   informationRequiredImage: {
-    src: informationRequiredImage,
+    src: '/image-informacion-necesaria.jpg',
     alt: 'Imagen ilustrativa de una conversacion con la informacion necesaria para un viaje exitoso',
   },
   logoTiendaBarbados: {
@@ -95,19 +90,19 @@ export const assets = {
     alt: 'Logotipo de Macarena Alzaga',
   },
   imageJavi: {
-    src: imageJavi,
+    src: '/image-javi.png',
     alt: 'Foto del colaborador Javier',
   },
   imageAlvaro: {
-    src: imageAlvaro,
+    src: '/image-alvaro.png',
     alt: 'Foto del colaborador Alvaro',
   },
   imageCami: {
-    src: imageCami,
+    src: '/image-cami.png',
     alt: 'Foto de la colaboradora Cami',
   },
   imageLeo: {
-    src: imageLeo,
+    src: '/image-leo.png',
     alt: 'Foto del colaborador Leo',
   },
   illustrationBuild: {
