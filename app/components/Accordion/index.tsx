@@ -31,7 +31,7 @@ function Accordion({
     <button
       ref={wrapperRef}
       className={clsx(
-        'flex flex-col rounded-lg py-2 px-3 shadow-drop-1 gap-2 text-start',
+        'flex flex-col rounded-lg py-2 px-3 shadow-drop-1 gap-2 text-start md:hover:bg-skyblue-100 ease-in-out duration-300',
         open ? 'bg-skyblue-200' : 'bg-white h-fit',
         className,
       )}
@@ -47,7 +47,7 @@ function Accordion({
         <Icon icon="AngleDown" className={clsx('', open ? 'rotate-180' : 'rotate-0')} />
       </div>
       {open && (
-        <div className="flex flex-wrap w-full">
+        <div className="flex flex-wrap w-full ease-in-out duration-300">
           <p className="text-label">{answer}</p>
         </div>
       )}
