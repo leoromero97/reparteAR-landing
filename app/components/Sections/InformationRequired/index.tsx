@@ -13,6 +13,8 @@ function InformationRequired() {
       <Image
         src={assets.informationRequiredImage.src}
         alt={assets.informationRequiredImage.alt}
+        width={441}
+        height={380}
         className={clsx('rounded-xl shadow-drop-3 shrink-0', isMobile ? 'w-[296px]' : 'w-[540px]')}
       />
       <div className={clsx('flex flex-col gap-6', isMobile ? 'items-center' : 'items-start')}>

@@ -1,6 +1,5 @@
 import logoReparteAR from '@/assets/logos/logo-reparteAR.svg';
 import heroVectorIllustration from '@/assets/illustrations/illustration-hero.svg';
-import informationRequiredImage from '@/assets/images/Informacion-necesaria.jpg';
 import logoTiendaBarbados from '@/assets/logos/logo-Tienda-Barbados.svg';
 import logoPopus from '@/assets/logos/logo-Popus.svg';
 import logoSesytel from '@/assets/logos/logo-Sesytel-Solutions.svg';
@@ -15,11 +14,11 @@ import logoPQC from '@/assets/logos/logo-PQC.svg';
 import logoRosaRomero from '@/assets/logos/logo-Rosa-Romero.svg';
 import logoRetificacionBetEl from '@/assets/logos/logo-Retificación-Bet-el.svg';
 import logoMacarenaAlzaga from '@/assets/logos/logo-Macarena-Alzaga.svg';
-import imageJavi from '@/assets/images/image-javi.png';
-import imageAlvaro from '@/assets/images/image-alvaro.png';
-import imageCami from '@/assets/images/image-cami.png';
-import imageLeo from '@/assets/images/image-leo.png';
 import illustrationBuild from '@/assets/illustrations/illustration-build.svg';
+import userJavi from '@/assets/users/user-javi.svg';
+import userCami from '@/assets/users/user-cami.svg';
+import userLeo from '@/assets/users/user-leo.svg';
+import userInfoNecesaria from '@/assets/users/user-info-necesaria.svg';
 import illustrationWebSearching from '@/assets/illustrations/illustration-web-searching.svg';
 
 export const assets = {
@@ -36,7 +35,7 @@ export const assets = {
     alt: 'Ilustracion personalizada de reparteAR',
   },
   informationRequiredImage: {
-    src: informationRequiredImage,
+    src: userInfoNecesaria,
     alt: 'Imagen ilustrativa de una conversacion con la informacion necesaria para un viaje exitoso',
   },
   logoTiendaBarbados: {
@@ -96,19 +95,15 @@ export const assets = {
     alt: 'Logotipo de Macarena Alzaga',
   },
   imageJavi: {
-    src: imageJavi,
+    src: userJavi,
     alt: 'Foto del colaborador Javier',
   },
-  imageAlvaro: {
-    src: imageAlvaro,
-    alt: 'Foto del colaborador Alvaro',
-  },
   imageCami: {
-    src: imageCami,
+    src: userCami,
     alt: 'Foto de la colaboradora Cami',
   },
   imageLeo: {
-    src: imageLeo,
+    src: userLeo,
     alt: 'Foto del colaborador Leo',
   },
   illustrationBuild: {

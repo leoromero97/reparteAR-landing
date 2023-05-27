@@ -8,7 +8,13 @@ function CollaboratorCard({ className, name, image, roles }: ICollaboratorCardPr
     <div className={clsx('w-[276px] md:w-60 rounded-xl py-4 px-2 gap-2 bg-white shadow-drop-3 flex flex-col shrink-0 items-center', className)}>
       {image?.src ? (
         <div className="w-20 h-20 md:w-[140px] md:h-[140px] flex">
-          <Image src={image.src} alt={image.alt} className="border-[5px] border-skyblue rounded-full" />
+          <Image
+            src={image.src}
+            alt={image.alt}
+            width={140}
+            height={140}
+            className="border-[5px] border-skyblue rounded-full object-cover"
+          />
         </div>
       ) : (
         <Icon icon="User" className="w-20 h-20 md:w-[140px] md:h-[140px] text-skyblue border-[5px] border-skyblue rounded-full" />
