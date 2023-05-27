@@ -11,7 +11,7 @@ export interface IFooterProps {
 function Footer({ className }: IFooterProps) {
   const isMobile = useMobileDetect();
   const date = new Date();
-  const rightsReserved = `©`.concat(' ' + date.getFullYear().toLocaleString() + ' ' + texts.commons.allRightsReserved);
+  const rightsReserved = `©`.concat(' ' + date.getFullYear().toString() + ' ' + texts.commons.allRightsReserved);
 
   return (
     <footer
@@ -32,7 +32,7 @@ function Footer({ className }: IFooterProps) {
 
               {socialNetworks.map(({ href, icon, id, name }) => (
                 <li key={id}>
-                  <a href={href} target="_blank" title={name} className="md:hover:text-skyblue">
+                  <a href={href} target="_blank" title={name} className="md:hover:text-skyblue ease-in-out duration-300">
                     <Icon icon={icon} className={isMobile ? 'w-6 h-6' : 'w-11 h-11'} />
                   </a>
                 </li>
@@ -49,7 +49,7 @@ function Footer({ className }: IFooterProps) {
         <a
           href="https://www.linkedin.com/in/leonardogerbacioromero/"
           target="_blank"
-          className="flex flex-col items-center gap-2 md:hover:text-skyblue"
+          className="flex flex-col items-center gap-2 md:hover:text-skyblue ease-in-out duration-300"
         >
           <span className="text-label font-bold">
             {texts.commons.didYouLikeThisLandingPage}

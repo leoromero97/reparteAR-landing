@@ -26,12 +26,18 @@ function Testimonials({ className }: ITestimonialsProps) {
         </span>
         <div
           className={clsx(
-            'flex w-full py-6 overflow-y-hidden',
+            'flex w-full py-6 overflow-y-hidden px-2',
             isMobile ? 'overflow-scroll px-3 gap-4' : 'flex-wrap gap-6 justify-between'
           )}
         >
-          {testimonialsByClients.map(({ id, name, message }) => (
-            <TestimonialCard key={id} message={message} name={name} />
+          {testimonialsByClients.map(({ id, name, message, href }) => (
+            <TestimonialCard
+              key={id}
+              message={message}
+              name={name}
+              href={href}
+              className="h-64"
+            />
           ))}
         </div>
       </div>
