@@ -12,13 +12,13 @@ function OurClients() {
       <span className={clsx(isMobile ? 'text-subtitle text-center' : 'text-h4 font-bold mb-6')}>
         {texts.commons.theyTrustUs}
       </span>
-      <div className={clsx('flex w-full py-6 overflow-y-hidden', isMobile ? 'overflow-scroll px-3 gap-4' : 'flex-wrap gap-14')}>
+      <div className={clsx('flex w-full py-6 overflow-y-hidden px-2', isMobile ? 'overflow-scroll px-3 gap-4' : 'flex-wrap gap-14')}>
         {clients.map(({ href, id, logo}) => (
           <a
             href={href}
             target="_blank"
             key={id}
-            className="flex w-14 md:w-28 h-14 md:h-28 shadow-drop-3 rounded-full shrink-0"
+            className="flex w-14 md:w-28 h-14 md:h-28 shadow-drop-3 rounded-full shrink-0 hover:ring-skyblue hover:ring-[5px]"
           >
             <Image
               src={logo.src}
