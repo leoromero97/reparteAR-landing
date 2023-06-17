@@ -3,9 +3,9 @@
 import clsx from 'clsx';
 import Image from 'next/image';
 import Button from '@/components/Button';
+import { assets } from '@/constants/assets';
 import { texts } from '@/constants/texts';
-import useMobileDetect from './hooks/useMobileDetected';
-import { assets } from './constants/assets';
+import useMobileDetect from '@/hooks/useMobileDetected';
 
 export default function NotFoundPage() {
   const isMobile = useMobileDetect();

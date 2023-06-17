@@ -24,15 +24,15 @@ function NavMobile({ menuOpened, onClick } : INavMobileProps) {
             width={142}
           />
         </Link>
-        <button
-          className="flex items-center justify-center outline-none"
+        <div
+          className="flex items-center justify-center outline-none hover:cursor-pointer"
           onClick={onClick}
         >
           <Icon
             icon={menuOpened ? 'Close' : 'Menu'}
             className="text-skyblue transition-all"
           />
-        </button>
+        </div>
 
       </div>
       {menuOpened && (
