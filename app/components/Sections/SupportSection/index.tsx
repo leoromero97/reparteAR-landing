@@ -20,7 +20,7 @@ function SupportSection() {
 
   return (
     <section
-      id="soporte"
+      id="preguntas"
       className={clsx(
         'flex flex-col items-center w-full',
         isMobile ? 'pt-20 pb-10' : 'py-40',

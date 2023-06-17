@@ -6,11 +6,19 @@ import { assets } from "@/constants/assets";
 import { externalLink } from "@/constants/messageExternal";
 import { navbarLinks } from "@/constants/navbarLinks";
 import { texts } from "@/constants/texts";
+import useTheme from "@/hooks/useTheme";
 
 function NavDesktop() {
+  const { isDark, isLight } = useTheme();
+
   return (
     <div className={clsx(
-      'bg-white shadow-drop-3 flex items-center justify-center w-full fixed z-10'
+      `flex items-center 
+      justify-center 
+      w-full 
+      fixed z-10`,
+      isDark && 'bg-skyblue-800 text-skyblue-200',
+      isLight && 'bg-white text-skyblue-900 shadow-drop-3',
     )}>
       <div className='max-w-8xl flex items-center justify-between w-full px-8 py-7'>
         <Link href="/" title='Ir al Home' className="w-[261px]">
@@ -26,14 +34,28 @@ function NavDesktop() {
             <li
               key={navItem.id}
               title={navItem.title}
-              className={clsx(
-                'w-full flex items-center',
-              )}
+              className="w-full flex items-center"
             >
               <Link
                 href={navItem.href}
                 scroll={false}
-                className="w-full hover:text-skyblue active:font-semibold font-medium ease-in-out duration-300 hover:bg-skyblue-100 rounded text-lg p-2 h-12 w-34 text-center"
+                className={clsx(
+                  `w-full 
+                  hover:text-skyblue 
+                  active:font-semibold 
+                  font-medium 
+                  ease-in-out 
+                  duration-100 
+                  rounded 
+                  text-lg 
+                  py-2
+                  px-4 
+                  h-12 
+                  w-34 
+                  text-center`,
+                  isDark && 'hover:bg-skyblue-900',
+                  isLight && 'hover:bg-skyblue-100',
+                  )}
               >
                 {navItem.title}
               </Link>

@@ -17,8 +17,8 @@ export const navbarLinks = [
     href: '/#nosotros',
   },
   {
-    id: 'support',
-    title: texts.navbar.support,
-    href: '/#soporte',
+    id: 'questions',
+    title: texts.navbar.questions,
+    href: '/#preguntas',
   },
 ];

@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import clsx from "clsx";
 import Icon from "@/components/Icon";
 import { IAccordionProps } from "./types";
+import useTheme from "@/hooks/useTheme";
 
 function Accordion({
   answer,
@@ -10,6 +11,7 @@ function Accordion({
   onChange,
   question,
 }: IAccordionProps) {
+  const { isDark, isLight } = useTheme();
   const [open, setOpen] = useState(false);
   const wrapperRef = useRef<HTMLButtonElement>(null);
 
@@ -31,8 +33,13 @@ function Accordion({
     <button
       ref={wrapperRef}
       className={clsx(
-        'flex flex-col rounded-lg py-2 px-3 shadow-drop-1 gap-2 text-start md:hover:bg-skyblue-100 ease-in-out duration-300',
-        open ? 'bg-skyblue-200' : 'bg-white h-fit',
+        'flex flex-col rounded-lg py-2 px-3 gap-2 text-start ease-in-out duration-100 ',
+        open && isLight && !isDark  && 'bg-skyblue-200',
+        !open && isLight && !isDark  && 'bg-white h-fit',
+        isLight && 'hover:bg-skyblue-200 shadow-drop-1',
+        open && isDark && !isLight && 'bg-skyblue-800 border-none',
+        !open && isDark && !isLight  && 'bg-skyblue-900 h-fit border border-skyblue-800 focus:border-skyblue-800',
+        isDark && 'hover:bg-skyblue-800',
         className,
       )}
       key={id} onClick={() => {
@@ -47,7 +54,7 @@ function Accordion({
         <Icon icon="AngleDown" className={clsx('', open ? 'rotate-180' : 'rotate-0')} />
       </div>
       {open && (
-        <div className="flex flex-wrap w-full ease-in-out duration-300">
+        <div className="flex flex-wrap w-full ease-in-out duration-100">
           <p className="text-label">{answer}</p>
         </div>
       )}

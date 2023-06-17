@@ -2,10 +2,27 @@ import Image from "next/image";
 import clsx from "clsx";
 import { ICollaboratorCardProps } from "./types";
 import Icon from "@/components/Icon";
+import useTheme from "@/hooks/useTheme";
 
 function CollaboratorCard({ className, name, image, roles }: ICollaboratorCardProps) {
+  const { isDark, isLight } = useTheme();
+
   return (
-    <div className={clsx('w-[276px] md:w-60 rounded-xl py-4 px-2 gap-2 bg-white shadow-drop-3 flex flex-col shrink-0 items-center', className)}>
+    <div 
+      className={clsx(`
+        w-[276px] 
+        md:w-60 
+        rounded-xl 
+        py-4 
+        px-2 
+        gap-2 
+        flex 
+        flex-col 
+        shrink-0 
+        items-center`,
+        isLight && 'bg-white shadow-drop-3',
+        isDark && 'bg-skyblue-800',
+        className)}>
       {image?.src ? (
         <div className="w-20 h-20 md:w-[140px] md:h-[140px] flex ease-in-out">
           <Image
