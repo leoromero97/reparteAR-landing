@@ -19,7 +19,9 @@ export type IconList =
   | 'Menu'
   | 'MercadoEnviosFlex'
   | 'MoneyBillStack'
+  | 'Moon'
   | 'ReparteAR'
+  | 'Sun'
   | 'Thunderbolt'
   | 'User'
   | 'WhatsApp';

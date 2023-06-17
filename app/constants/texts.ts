@@ -8,7 +8,7 @@ export const navbarTexts = {
   services: 'Servicios',
   testimonials: 'Testimonios',
   us: 'Nosotros',
-  support: 'Soporte',
+  questions: 'Preguntas',
 };
 
 export const heroTexts = {
@@ -125,13 +125,16 @@ export const servicesTexts = {
 
 export const commonsTexts = {
   allRightsReserved: 'Todos los derechos reservados',
+  dark: 'Oscuro',
   didYouLikeThisLandingPage: '¿Te gustó esta landing page?',
   developmentBy: 'Desarrollado por Leonardo Esteban Gerbacio Romero',
   doYouHaveAnyDoubtWriteUs: '¿Tenés algunda duda? ¡Escribinos!',
   frequentQuestions: 'Preguntas frecuentes',
+  light: 'Claro',
   followUs: 'Seguinos',
   testimonials: 'Testimonios',
   theyTrustUs: 'Confian en nosotros',
+  theme: 'Tema',
   techMessage: 'Estamos en el proceso de creación de nuestra propia plataforma para automatizar procesos internos',
   us: 'Nosotros',
   usMessage: 'Actualmente somos un equipo de 4 personas con el sueño de seguir creciendo como emprendimiento y brindar más trabajo a más personas',

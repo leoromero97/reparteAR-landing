@@ -1,3 +1,4 @@
+import { ThemeProvider } from 'context/theme';
 import './globals.css'
 import { Poppins } from 'next/font/google'
 import Script from "next/script";
@@ -23,7 +24,7 @@ export const metadata = {
     title: 'reparteAR',
     description: 'Landing page de reparteAR - Servicio de moto mensajería y envíos en CABA y GBA',
     url: 'https://repartear.com',
-    siteName: 'reparteAR Lading Page',
+    siteName: 'reparteAR landing page',
   },
   category: 'Logística',
 }
@@ -41,7 +42,11 @@ export default function RootLayout({ children }) {
           `}
         </Script>
       </head>
-      <body className={poppins.className}>{children}</body>
+      <body className={poppins.className}>
+        <ThemeProvider>
+          {children}
+        </ThemeProvider>
+      </body>
     </html>
   )
 }

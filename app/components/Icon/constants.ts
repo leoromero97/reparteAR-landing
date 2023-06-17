@@ -14,7 +14,9 @@ import LinkedIn from './components/LinkedIn';
 import Menu from './components/Menu';
 import MercadoEnviosFlex from './components/MercadoEnviosFlex';
 import MoneyBillStack from './components/MoneyBillStack';
+import Moon from './components/Moon';
 import ReparteAR from './components/ReparteAR';
+import Sun from './components/Sun';
 import Thunderbolt from './components/Thunderbolt';
 import User from './components/User';
 import WhatsApp from './components/WhatsApp';
@@ -35,7 +37,9 @@ export const icons = {
   Menu,
   MercadoEnviosFlex,
   MoneyBillStack,
+  Moon,
   ReparteAR,
+  Sun,
   Thunderbolt,
   User,
   WhatsApp,

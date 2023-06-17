@@ -4,9 +4,11 @@ import CategoryFilter from "@/components/StepFilter";
 import { texts } from "@/constants/texts";
 import { categoriesHowWeWork } from "@/constants/howWeWork";
 import useMobileDetect from "@/hooks/useMobileDetected";
+import useTheme from "@/hooks/useTheme";
 
 function HowWeWork() {
   const isMobile = useMobileDetect();
+  const { isDark, isLight } = useTheme();
   const [idSelected, setIdSelected] = useState('firstShipment');
   const steps = categoriesHowWeWork.map((category) => { return { id: category.id, steps: category.steps } });
 
@@ -50,7 +52,20 @@ function HowWeWork() {
       ) : (
         <div className="flex gap-7 justify-between w-full">
           {categoriesHowWeWork.map((category) => (
-            <div key={category.id} className="flex flex-col py-10 px-6 gap-6 bg-white shadow-drop-3 rounded-xl w-u462">
+            <div
+              key={category.id}
+              className={clsx(`
+                flex 
+                flex-col 
+                py-10 
+                px-6 
+                gap-6 
+                rounded-xl 
+                w-u462`,
+                isLight && 'bg-white shadow-drop-3',
+                isDark && 'bg-skyblue-800',
+              )}
+            >
               <span className="text-subtitle font-bold">{category.title}</span>
               <ul className="flex flex-col gap-4 w-full">
                 {category.steps.map((stepDescription) => (

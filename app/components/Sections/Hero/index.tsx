@@ -17,7 +17,7 @@ function Hero({ className }: IHeroProps) {
       className={clsx(
         'flex gap-10 max-w-8xl px-8 w-full',
         className,
-        isMobile ? 'flex-col items-center pb-10 pt-32' : 'flex-row py-40'
+        isMobile ? 'flex-col items-center pb-10 pt-32' : 'flex-row pb-30 pt-56'
       )}
     >
       <div className="flex flex-col gap-6 items-center justify-center">

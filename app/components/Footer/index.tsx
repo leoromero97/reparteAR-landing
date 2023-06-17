@@ -3,6 +3,7 @@ import useMobileDetect from "@/hooks/useMobileDetected";
 import { texts } from "@/constants/texts";
 import { socialNetworks } from "@/constants/socialNetworks";
 import Icon from "../Icon";
+import useTheme from "@/hooks/useTheme";
 
 export interface IFooterProps {
   className?: string;
@@ -10,12 +11,20 @@ export interface IFooterProps {
 
 function Footer({ className }: IFooterProps) {
   const isMobile = useMobileDetect();
+  const { isDark, isLight } = useTheme();
   const date = new Date();
   const rightsReserved = `©`.concat(' ' + date.getFullYear().toString() + ' ' + texts.commons.allRightsReserved);
 
   return (
     <footer
-      className="bg-skyblue-200 w-full flex flex-col items-center"
+      className={clsx(`
+      w-full 
+      flex 
+      flex-col 
+      items-center`,
+      isLight && 'bg-skyblue-200',
+      isDark && 'bg-skyblue-800',
+      )}
     >
       <div className={clsx(
         'flex flex-col max-w-8xl w-full p-8',
@@ -32,7 +41,7 @@ function Footer({ className }: IFooterProps) {
 
               {socialNetworks.map(({ href, icon, id, name }) => (
                 <li key={id}>
-                  <a href={href} target="_blank" title={name} className="md:hover:text-skyblue ease-in-out duration-300">
+                  <a href={href} target="_blank" title={name} className="hover:text-skyblue ease-in-out duration-300">
                     <Icon icon={icon} className={isMobile ? 'w-6 h-6' : 'w-11 h-11'} />
                   </a>
                 </li>
@@ -49,7 +58,7 @@ function Footer({ className }: IFooterProps) {
         <a
           href="https://www.linkedin.com/in/leonardogerbacioromero/"
           target="_blank"
-          className="flex flex-col items-center gap-2 md:hover:text-skyblue ease-in-out duration-300"
+          className="flex flex-col items-center gap-2 hover:text-skyblue ease-in-out duration-300"
         >
           <span className="text-label font-bold">
             {texts.commons.didYouLikeThisLandingPage}
