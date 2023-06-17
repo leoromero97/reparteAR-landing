@@ -11,13 +11,17 @@ import Footer from '@/components/Footer/indext';
 import { texts } from '@/constants/texts';
 import { externalLink } from '@/constants/messageExternal';
 import useMobileDetect from './hooks/useMobileDetected';
+import { Suspense } from 'react';
+import NavMobile from './components/Navbar/NavMobile';
 
 export default function Home() {
   const isMobile = useMobileDetect();
 
   return (
     <main className="flex flex-col items-center w-full h-auto min-h-screen">
-      <Navbar />
+      <Suspense fallback={<NavMobile />}>
+        <Navbar isMobile={isMobile} />
+      </Suspense>
       <Hero />
       <Services />
       <Testimonials />

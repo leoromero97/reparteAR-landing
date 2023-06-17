@@ -32,14 +32,14 @@ function HowWeWork() {
                 {categoryStep.steps.map((steps) => {
                   if (categoryStep.id === idSelected)
                     return (
-                      <div key={steps.id} className="flex gap-3 items-center">
+                      <li key={steps.id} className="flex gap-3 items-center">
                         <span className="h-8 w-8 p-1 text-center text-label font-bold bg-skyblue-600 text-skyblue-100 shrink-0 rounded-full flex flex-col items-center justify-center">
                           {steps.number}
                         </span>
                         <span className="text-label">
                           {steps.text}
                         </span>
-                      </div>
+                      </li>
                     );
                 })
                 }

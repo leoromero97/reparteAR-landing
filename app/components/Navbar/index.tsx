@@ -1,12 +1,14 @@
 import { useState } from 'react';
-import Image from 'next/image';
 import useMobileDetect from '@/hooks/useMobileDetected';
 
 import NavDesktop from './NavDesktop';
 import NavMobile from './NavMobile';
 
-function Navbar() {
-  const isMobile = useMobileDetect();
+type INavbar = {
+  isMobile: boolean;
+}
+
+function Navbar({ isMobile }: INavbar) {
   const [menuOpened, setMenuOpened] = useState(false);
   const onOpenMenu = () => {
     setMenuOpened(!menuOpened);

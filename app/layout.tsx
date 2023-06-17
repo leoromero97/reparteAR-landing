@@ -19,7 +19,7 @@ export const metadata = {
   applicationName: 'reparteAR Landing Page',
   colorScheme: 'light',
   openGraph: {
-    images: '/reparteAR-cover.png',
+    images: 'https://repartear.com/reparteAR-cover.png',
     title: 'reparteAR',
     description: 'Landing page de reparteAR - Servicio de moto mensajería y envíos en CABA y GBA',
     url: 'https://repartear.com',

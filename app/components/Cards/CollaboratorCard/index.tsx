@@ -7,7 +7,7 @@ function CollaboratorCard({ className, name, image, roles }: ICollaboratorCardPr
   return (
     <div className={clsx('w-[276px] md:w-60 rounded-xl py-4 px-2 gap-2 bg-white shadow-drop-3 flex flex-col shrink-0 items-center', className)}>
       {image?.src ? (
-        <div className="w-20 h-20 md:w-[140px] md:h-[140px] flex">
+        <div className="w-20 h-20 md:w-[140px] md:h-[140px] flex ease-in-out">
           <Image
             src={image.src}
             alt={image.alt}
