@@ -65,6 +65,7 @@ function SupportSection() {
             to={externalLink}
             icon="WhatsApp"
             title={texts.actions.makeInquiry}
+            className="w-full max-w-sm lg:w-fit"
           />
         </div>
       </div>

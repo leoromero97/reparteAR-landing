@@ -19,7 +19,7 @@ import useTheme from '@/hooks/useTheme';
 
 export default function Home() {
   const isMobile = useMobileDetect();
-  const { toggleTheme, isDark, isLight, labelTheme } = useTheme();
+  const { isDark, isLight } = useTheme();
 
   return (
     <main
@@ -43,7 +43,7 @@ export default function Home() {
       <Testimonials />
       <UsSection />
       <SupportSection />
-      {isMobile ? (
+      {isMobile && (
         <div className="flex justify-center w-full py-2 px-8 fixed top-[86%] z-30">
           <Button
             text={texts.actions.requestTrip}
@@ -51,14 +51,6 @@ export default function Home() {
             className="w-full max-w-sm shadow-drop-1"
             external
             to={externalLink}
-          />
-        </div>
-      ) : (
-        <div className="flex justify-end w-full py-2 max-w-8xl px-8 fixed top-[90%] z-30">
-          <ToggleTheme
-            handleToggleTheme={toggleTheme}
-            isDark={isDark}
-            theme={labelTheme}
           />
         </div>
       )}
