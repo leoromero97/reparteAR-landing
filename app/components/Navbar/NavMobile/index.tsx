@@ -15,9 +15,9 @@ function NavMobile({ menuOpened, onClick }: INavMobileProps) {
   const { isDark, isLight, labelTheme, toggleTheme } = useTheme();
 
   return (
-    <div className={clsx(
+    <header className={clsx(
       'flex items-center justify-center w-full fixed z-10',
-      menuOpened && 'flex-col z-50  h-screen justify-between',
+      menuOpened && 'flex-col z-50 min-h-screen justify-between',
       isDark && 'bg-skyblue-800 text-skyblue-200',
       isLight && 'bg-white text-skyblue-900 shadow-drop-3',
     )}>
@@ -45,7 +45,7 @@ function NavMobile({ menuOpened, onClick }: INavMobileProps) {
           className={clsx(
             'flex items-center gap-2 flex-col w-full font-normal flex-1 justify-between',
           )}>
-          <div className={clsx("flex w-full", 'flex-col flex-shrink-0 pt-40')}>
+          <nav className={clsx("flex w-full", 'flex-col flex-shrink-0 pt-20')}>
             {navbarLinks.map((navItem) => (
               <li
                 key={navItem.id}
@@ -75,14 +75,14 @@ function NavMobile({ menuOpened, onClick }: INavMobileProps) {
                 </Link>
               </li>
             ))}
-          </div>
-          <div className="flex flex-col justify-center w-full pb-14 px-8 gap-8">
             <ToggleTheme
               handleToggleTheme={toggleTheme}
               isDark={isDark}
+              isLight={isLight}
               theme={labelTheme}
+              className="mx-8 my-14"
             />
-          </div>
+          </nav>
           <div className="flex justify-center w-full pb-14 px-8 gap-8">
             <Button
               text={texts.actions.requestTrip}
@@ -94,7 +94,7 @@ function NavMobile({ menuOpened, onClick }: INavMobileProps) {
           </div>
         </ul>
       )}
-    </div>
+    </header>
   );
 }
 

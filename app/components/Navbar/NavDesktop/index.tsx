@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import clsx from "clsx";
 import Button from "@/components/Button";
+import ToggleTheme from "@/components/ToggleTheme";
 import { assets } from "@/constants/assets";
 import { externalLink } from "@/constants/messageExternal";
 import { navbarLinks } from "@/constants/navbarLinks";
@@ -9,10 +10,10 @@ import { texts } from "@/constants/texts";
 import useTheme from "@/hooks/useTheme";
 
 function NavDesktop() {
-  const { isDark, isLight } = useTheme();
+  const { isDark, isLight, toggleTheme } = useTheme();
 
   return (
-    <div className={clsx(
+    <header className={clsx(
       `flex items-center 
       justify-center 
       w-full 
@@ -49,19 +50,20 @@ function NavDesktop() {
                   rounded 
                   text-lg 
                   py-2
-                  px-4 
+                  px-3 
                   h-12 
                   w-34 
                   text-center`,
                   isDark && 'hover:bg-skyblue-900',
                   isLight && 'hover:bg-skyblue-100',
-                  )}
+                )}
               >
                 {navItem.title}
               </Link>
             </li>
           ))}
-          <li className="flex justify-center w-full">
+        </ul>
+          <div className="flex justify-center gap-4">
             <Button
               text={texts.actions.requestTrip}
               icon="WhatsApp"
@@ -69,10 +71,14 @@ function NavDesktop() {
               external
               to={externalLink}
             />
-          </li>
-        </ul>
+            <ToggleTheme
+              handleToggleTheme={toggleTheme}
+              isDark={isDark}
+              isLight={isLight}
+            />
+          </div>
       </div>
-    </div>
+    </header>
   );
 }
 

@@ -5,25 +5,26 @@ import { texts } from "@/constants/texts";
 type TToggleTheme = {
   className?: string;
   handleToggleTheme: () => void;
-  theme: string;
-  isDark: boolean;
+  theme?: string;
+  isDark?: boolean;
+  isLight?: boolean;
 }
 
-function ToggleTheme({ className, handleToggleTheme, isDark, theme }: TToggleTheme) {
+function ToggleTheme({ className, handleToggleTheme, isDark, isLight, theme }: TToggleTheme) {
   const themeLabel = texts.commons.theme.concat(' ', theme);
   return (
     <div
       className={clsx(`
         flex 
         items-center 
-        gap-2 
         cursor-pointer 
-        border 
         w-fit 
         rounded-full
         ease-in-out
         duration-100`,
-        isDark ? 'pl-3 border-r-0 bg-skyblue-900' : 'pr-3 border-l-0 bg-skyblue-white',
+        theme && isDark && 'pl-3 border-r-0 bg-skyblue-900',
+        theme && isLight && 'pr-3 border-l-0 bg-skyblue-white',
+        theme ? 'border gap-2' : 'p-0',
         className
       )}
       onClick={handleToggleTheme}
@@ -34,20 +35,25 @@ function ToggleTheme({ className, handleToggleTheme, isDark, theme }: TToggleThe
           items-center
           justify-center  
           rounded-full
-          h-8 
-          w-8
+          h-12 
+          w-12
           text-skyblue-600
+          ease-in-out
+          duration-300
           `,
-          isDark ? 'bg-skyblue-200 order-2' : 'bg-skyblue-900 order-1',
+          isDark && 'bg-skyblue-200 order-2 hover:bg-skyblue-900',
+          isLight && 'bg-skyblue-900 order-1 hover:bg-skyblue-100',
         )}
       >
         <Icon icon={isDark ? 'Sun' : 'Moon'} />
       </div>
-      <span
-        className={clsx('text-label', isDark ? 'order-1' : 'order-2')}
-      >
-        {themeLabel}
-      </span>
+      {theme && (
+        <span
+          className={clsx('text-label font-medium ', isDark ? 'order-1' : 'order-2')}
+        >
+          {themeLabel}
+        </span>
+      )}
     </div>
   );
 }
