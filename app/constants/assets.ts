@@ -1,5 +1,7 @@
 import logoReparteAR from '@/assets/logos/logo-reparteAR.svg';
 import heroVectorIllustration from '@/assets/illustrations/illustration-hero.svg';
+import logoAlmamia from '@/assets/logos/Almamia.svg';
+import logoDaian from '@/assets/logos/Daian.svg';
 import logoTiendaBarbados from '@/assets/logos/logo-Tienda-Barbados.svg';
 import logoPopus from '@/assets/logos/logo-Popus.svg';
 import logoSesytel from '@/assets/logos/logo-Sesytel-Solutions.svg';
@@ -11,6 +13,7 @@ import logoLexus from '@/assets/logos/logo-Lexus.svg';
 import logoMaro from '@/assets/logos/logo-MARO.svg';
 import logoAviano from '@/assets/logos/logo-aviano.svg';
 import logoPQC from '@/assets/logos/logo-PQC.svg';
+import logoRoleta from '@/assets/logos/Roleta-Corp.svg';
 import logoRosaRomero from '@/assets/logos/logo-Rosa-Romero.svg';
 import logoRetificacionBetEl from '@/assets/logos/logo-Retificación-Bet-el.svg';
 import logoMacarenaAlzaga from '@/assets/logos/logo-Macarena-Alzaga.svg';
@@ -93,6 +96,18 @@ export const assets = {
   logoMacarenaAlzaga: {
     src: logoMacarenaAlzaga,
     alt: 'Logotipo de Macarena Alzaga',
+  },
+  logoAlmamia: {
+    src: logoAlmamia,
+    alt: 'Logotipo de Almamia',
+  },
+  logoDaian: {
+    src: logoDaian,
+    alt: 'Logotipo de Remises Daian',
+  },
+  logoRoleta: {
+    src: logoRoleta,
+    alt: 'Logotipo de Roleta Corp',
   },
   imageJavi: {
     src: userJavi,

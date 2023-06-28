@@ -34,13 +34,14 @@ function UsSection({ className }: IUsSectionProps) {
         <span className="text-body md:text-subtitle">
           {texts.commons.usMessage}
         </span>
-        <div className={clsx('flex w-full py-6 overflow-y-hidden', isMobile ? 'overflow-scroll gap-4 px-3' : 'flex-wrap gap-10 justify-between')}>
-          {collaborators && collaborators?.map((collaborator) => (
+        <div className={clsx('flex w-full py-6 overflow-y-hidden px-2', isMobile ? 'overflow-scroll gap-4 px-3' : 'flex-wrap gap-10 justify-between')}>
+          {collaborators && collaborators?.map(({id, name, roles, href, image}) => (
             <CollaboratorCard
-              key={collaborator.id}
-              name={collaborator.name}
-              image={collaborator.image}
-              roles={collaborator.roles}
+              key={id}
+              name={name}
+              href={href}
+              image={image}
+              roles={roles}
             />
           ))}
         </div>

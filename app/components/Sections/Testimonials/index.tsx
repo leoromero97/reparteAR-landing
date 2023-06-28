@@ -1,9 +1,9 @@
 import clsx from "clsx";
 import TestimonialCard from "@/components/Cards/TestimonialCard";
+import OurClients from "@/components/Sections/OurClients";
 import { texts } from "@/constants/texts";
 import { testimonialsByClients } from "@/constants/testimonialsByClients";
 import useMobileDetect from "@/hooks/useMobileDetected";
-import OurClients from "@/components/Sections/OurClients";
 
 export interface ITestimonialsProps {
   className?: string;

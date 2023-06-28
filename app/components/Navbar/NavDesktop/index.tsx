@@ -62,8 +62,15 @@ function NavDesktop() {
               </Link>
             </li>
           ))}
-        </ul>
-          <div className="flex justify-center gap-4">
+          <li>
+            <ToggleTheme
+              handleToggleTheme={toggleTheme}
+              isDark={isDark}
+              isLight={isLight}
+              className="mx-4"
+            />
+          </li>
+          <li>
             <Button
               text={texts.actions.requestTrip}
               icon="WhatsApp"
@@ -71,12 +78,8 @@ function NavDesktop() {
               external
               to={externalLink}
             />
-            <ToggleTheme
-              handleToggleTheme={toggleTheme}
-              isDark={isDark}
-              isLight={isLight}
-            />
-          </div>
+          </li>
+        </ul>
       </div>
     </header>
   );

@@ -4,11 +4,19 @@ import { ICollaboratorCardProps } from "./types";
 import Icon from "@/components/Icon";
 import useTheme from "@/hooks/useTheme";
 
-function CollaboratorCard({ className, name, image, roles }: ICollaboratorCardProps) {
+function CollaboratorCard({
+  className,
+  name,
+  image,
+  roles,
+  href
+}: ICollaboratorCardProps) {
   const { isDark, isLight } = useTheme();
 
   return (
-    <div 
+    <a
+      href={href}
+      target="_blank"
       className={clsx(`
         w-[276px] 
         md:w-60 
@@ -19,10 +27,13 @@ function CollaboratorCard({ className, name, image, roles }: ICollaboratorCardPr
         flex 
         flex-col 
         shrink-0 
-        items-center`,
+        items-center
+        cursor-not-allowed`,
         isLight && 'bg-white shadow-drop-3',
         isDark && 'bg-skyblue-800',
-        className)}>
+        href && 'hover:cursor-pointer hover:ring-skyblue hover:ring-[5px]',
+        className)}
+    >
       {image?.src ? (
         <div className="w-20 h-20 md:w-[140px] md:h-[140px] flex ease-in-out">
           <Image
@@ -54,7 +65,7 @@ function CollaboratorCard({ className, name, image, roles }: ICollaboratorCardPr
           </li>
         ))}
       </ul>
-    </div>
+    </a>
   );
 }
 
