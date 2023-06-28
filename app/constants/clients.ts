@@ -26,6 +26,14 @@ export const clients = [
     },
   },
   {
+    id: '15',
+    href: 'https://n9.cl/remisdaian',
+    logo: {
+      src: assets.logoDaian.src,
+      alt: assets.logoDaian.alt,
+    },
+  },
+  {
     id: '4',
     href: 'https://www.222oficial.com.ar/',
     logo: {
@@ -107,10 +115,26 @@ export const clients = [
   },
   {
     id: '13',
+    href: 'https://www.instagram.com/almamia.bebes/',
+    logo: {
+      src: assets.logoAlmamia.src,
+      alt: assets.logoAlmamia.alt,
+    },
+  },
+  {
+    id: '14',
     href: 'https://m.facebook.com/people/Bet-el-Rectificaci%C3%B3n-Industrial/100007622715643/',
     logo: {
       src: assets.logoRetificacionBetEl.src,
       alt: assets.logoRetificacionBetEl.alt,
+    },
+  },
+  {
+    id: '16',
+    href: 'https://roletacorp.com/',
+    logo: {
+      src: assets.logoRoleta.src,
+      alt: assets.logoRoleta.alt,
     },
   },
 ];

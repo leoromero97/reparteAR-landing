@@ -34,6 +34,7 @@ export const collaborators = [
   },
   {
     id: '4',
+    href: 'https://www.linkedin.com/in/leonardogerbacioromero/',
     image: {
       src: assets.imageLeo.src,
       alt: assets.imageLeo.alt,
