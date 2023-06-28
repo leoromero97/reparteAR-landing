@@ -26,11 +26,13 @@ function Hero({ className }: IHeroProps) {
       </div>
       <div className={clsx('flex', isMobile ? 'w-[296px]' : 'w-[571px]')}>
         <Image
-          src={assets.heroVector.src}
+          src="https://repartear.com/illustration-hero.png"
           alt={assets.heroVector.alt}
           priority
           className="object-cover"
           width={571}
+          height={580}
+          unoptimized
         />
       </div>
     </section>

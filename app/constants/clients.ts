@@ -26,7 +26,7 @@ export const clients = [
     },
   },
   {
-    id: '15',
+    id: '4',
     href: 'https://n9.cl/remisdaian',
     logo: {
       src: assets.logoDaian.src,
@@ -34,7 +34,7 @@ export const clients = [
     },
   },
   {
-    id: '4',
+    id: '5',
     href: 'https://www.222oficial.com.ar/',
     logo: {
       src: assets.logoTwoTwoTwo.src,
@@ -42,7 +42,7 @@ export const clients = [
     },
   },
   {
-    id: '5',
+    id: '6',
     href: 'http://www.integralprint.com.ar/',
     logo: {
       src: assets.logoIntegralPrint.src,
@@ -50,7 +50,7 @@ export const clients = [
     },
   },
   {
-    id: '6',
+    id: '7',
     href: 'https://manchajuguetes.com.ar/',
     logo: {
       src: assets.logoMancha.src,
@@ -58,7 +58,7 @@ export const clients = [
     },
   },
   {
-    id: '7',
+    id: '8',
     href: 'https://quiromed.com.ar/',
     logo: {
       src: assets.logoQuiromed.src,
@@ -66,7 +66,7 @@ export const clients = [
     },
   },
   {
-    id: '8',
+    id: '9',
     href: 'https://www.lexuseditores.com.ar/',
     logo: {
       src: assets.logoLexus.src,
@@ -74,7 +74,7 @@ export const clients = [
     },
   },
   {
-    id: '9',
+    id: '10',
     href: 'https://instagram.com/maro.clothing?igshid=MzRlODBiNWFlZA==',
     logo: {
       src: assets.logoMaro.src,
@@ -82,7 +82,7 @@ export const clients = [
     },
   },
   {
-    id: '14',
+    id: '11',
     href: 'https://www.macarenaalzaga.com/',
     logo: {
       src: assets.logoMacarenaAlzaga.src,
@@ -90,7 +90,7 @@ export const clients = [
     },
   },
   {
-    id: '10',
+    id: '12',
     href: 'http://www.aviano.com.ar/',
     logo: {
       src: assets.logoAviano.src,
@@ -98,7 +98,7 @@ export const clients = [
     },
   },
   {
-    id: '11',
+    id: '13',
     href: 'https://www.google.com/search?q=pqc+grafica&sxsrf=APwXEdcsIP5PZdPUHXntzFmYK_qG1Ri0cQ%3A1684887894300&ei=VlltZOX0EbXh1sQPvN6NIA&ved=0ahUKEwjl97PD2Iz_AhW1sJUCHTxvAwQQ4dUDCA8&uact=5&oq=pqc+grafica&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzILCC4QgAQQxwEQrwEyGQguEIAEEMcBEK8BEJcFENwEEN4EEOAEGAE6CggAEEcQ1gQQsAM6CggAEIoFELADEEM6DQguEIAEELEDEIMBEAo6DQgAEIAEELEDEIMBEAo6DQguEIMBELEDEIAEEAo6CwgAEIoFELEDEIMBOgcILhCABBAKOgcIABCABBAKOgYIABAWEB46CggAEBYQHhAPEAo6BQghEKABOg0ILhANEIAEEMcBEK8BOhsILhANEIAEEMcBEK8BEJcFENwEEN4EEOAEGAFKBAhBGABQGVjvEmDIFmgEcAF4AIABiAGIAbEJkgEDMi45mAEAoAEByAEKwAEB2gEGCAEQARgU&sclient=gws-wiz-serp#',
     logo: {
       src: assets.logoPQC.src,
@@ -106,7 +106,7 @@ export const clients = [
     },
   },
   {
-    id: '12',
+    id: '14',
     href: 'https://www.instagram.com/rosamasajesyestetica/',
     logo: {
       src: assets.logoRosaRomero.src,
@@ -114,7 +114,7 @@ export const clients = [
     },
   },
   {
-    id: '13',
+    id: '15',
     href: 'https://www.instagram.com/almamia.bebes/',
     logo: {
       src: assets.logoAlmamia.src,
@@ -122,7 +122,7 @@ export const clients = [
     },
   },
   {
-    id: '14',
+    id: '16',
     href: 'https://m.facebook.com/people/Bet-el-Rectificaci%C3%B3n-Industrial/100007622715643/',
     logo: {
       src: assets.logoRetificacionBetEl.src,
@@ -130,7 +130,7 @@ export const clients = [
     },
   },
   {
-    id: '16',
+    id: '17',
     href: 'https://roletacorp.com/',
     logo: {
       src: assets.logoRoleta.src,

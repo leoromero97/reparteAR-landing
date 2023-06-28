@@ -13,11 +13,12 @@ function InformationRequired() {
   return (
     <div className="flex flex-col md:flex-row-reverse items-center max-w-8xl px-8 w-full gap-6 py-10 justify-between">
       <Image
-        src={assets.informationRequiredImage.src}
+        src="https://repartear.com/Example-msj-wpp.jpg"
         alt={assets.informationRequiredImage.alt}
         width={441}
         height={380}
         className={clsx('rounded-xl shadow-drop-3 shrink-0', isMobile ? 'w-[296px]' : 'w-[540px]')}
+        unoptimized
       />
       <div className={clsx('flex flex-col gap-6', isMobile ? 'items-center' : 'items-start')}>
         <span className={clsx(isMobile ? 'text-subtitle text-center' : 'text-h4 font-bold mb-6')}>

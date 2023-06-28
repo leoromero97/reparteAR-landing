@@ -1,5 +1,4 @@
 import logoReparteAR from '@/assets/logos/logo-reparteAR.svg';
-import heroVectorIllustration from '@/assets/illustrations/illustration-hero.svg';
 import logoAlmamia from '@/assets/logos/Almamia.svg';
 import logoDaian from '@/assets/logos/Daian.svg';
 import logoTiendaBarbados from '@/assets/logos/logo-Tienda-Barbados.svg';
@@ -21,7 +20,6 @@ import illustrationBuild from '@/assets/illustrations/illustration-build.svg';
 import userJavi from '@/assets/users/user-javi.svg';
 import userCami from '@/assets/users/user-cami.svg';
 import userLeo from '@/assets/users/user-leo.svg';
-import userInfoNecesaria from '@/assets/users/user-info-necesaria.svg';
 import illustrationWebSearching from '@/assets/illustrations/illustration-web-searching.svg';
 
 export const assets = {
@@ -34,11 +32,9 @@ export const assets = {
     }
   },
   heroVector: {
-    src: heroVectorIllustration,
     alt: 'Ilustracion personalizada de reparteAR',
   },
   informationRequiredImage: {
-    src: userInfoNecesaria,
     alt: 'Imagen ilustrativa de una conversacion con la informacion necesaria para un viaje exitoso',
   },
   logoTiendaBarbados: {
