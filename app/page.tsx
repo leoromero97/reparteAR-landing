@@ -9,7 +9,6 @@ import Navbar from '@/components/Navbar'
 import NavMobile from '@/components/Navbar/NavMobile';
 import Services from '@/components/Sections/Services';
 import Testimonials from '@/components/Sections/Testimonials';
-import ToggleTheme from '@/components/ToggleTheme';
 import UsSection from '@/components/Sections/UsSection';
 import SupportSection from '@/components/Sections/SupportSection';
 import { texts } from '@/constants/texts';
@@ -43,17 +42,15 @@ export default function Home() {
       <Testimonials />
       <UsSection />
       <SupportSection />
-      {isMobile && (
-        <div className="flex justify-center w-full py-2 px-8 fixed top-[86%] z-30">
-          <Button
-            text={texts.actions.requestTrip}
-            icon="WhatsApp"
-            className="w-full max-w-sm shadow-drop-1"
-            external
-            to={externalLink}
-          />
-        </div>
-      )}
+      <div className="flex md:hidden justify-center w-full py-2 px-8 fixed top-[86%] z-30">
+        <Button
+          text={texts.actions.requestTrip}
+          icon="WhatsApp"
+          className="w-full max-w-sm shadow-drop-1"
+          external
+          to={externalLink}
+        />
+      </div>
       <Footer />
     </main>
   )

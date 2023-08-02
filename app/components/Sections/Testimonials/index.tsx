@@ -1,34 +1,22 @@
-import clsx from "clsx";
 import TestimonialCard from "@/components/Cards/TestimonialCard";
 import OurClients from "@/components/Sections/OurClients";
 import { texts } from "@/constants/texts";
 import { testimonialsByClients } from "@/constants/testimonialsByClients";
-import useMobileDetect from "@/hooks/useMobileDetected";
 
-export interface ITestimonialsProps {
-  className?: string;
-}
-
-function Testimonials({ className }: ITestimonialsProps) {
-  const isMobile = useMobileDetect();
-
+function Testimonials() {
   return (
     <section
       id="testimonios"
-      className={clsx(
-        'flex flex-col items-center w-full',
-        isMobile ? 'pt-20 pb-10' : 'py-40',
-      )}
+      className=
+      'flex flex-col items-center w-full pt-20 pb-10 md:py-40'
     >
-      <div className={clsx('flex flex-col max-w-8xl px-8 w-full py-10', className, isMobile && 'items-center')}>
-        <span className={clsx(isMobile ? 'text-subtitle font-bold text-center' : 'text-h3 font-bold mb-6')}>
+      <div className='flex flex-col max-w-8xl px-8 w-full py-10 items-center md:items-start'>
+        <span className='text-subtitle font-bold text-center md:text-h3 md:font-bold md:mb-6'>
           {texts.commons.testimonials}
         </span>
         <div
-          className={clsx(
-            'flex w-full py-6 overflow-y-hidden px-2',
-            isMobile ? 'overflow-scroll px-3 gap-4' : 'flex-wrap gap-6 justify-between'
-          )}
+          className=
+          'flex w-full py-6 overflow-y-hidden overflow-scroll px-3 gap-4 md:flex-wrap md:gap-6 md:justify-between md:overflow-hidden'
         >
           {testimonialsByClients.map(({ id, name, message, href }) => (
             <TestimonialCard
@@ -36,7 +24,7 @@ function Testimonials({ className }: ITestimonialsProps) {
               message={message}
               name={name}
               href={href}
-              className={isMobile ? 'h-46' : 'h-64'}
+              className='h-46 md:h-64'
             />
           ))}
         </div>

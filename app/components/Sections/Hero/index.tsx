@@ -3,28 +3,28 @@ import clsx from "clsx";
 
 import { assets } from "@/constants/assets";
 import { texts } from "@/constants/texts";
-import useMobileDetect from "@/hooks/useMobileDetected";
 
 export interface IHeroProps {
   className?: string;
 }
 
 function Hero({ className }: IHeroProps) {
-  const isMobile = useMobileDetect();
-
   return (
     <section
       className={clsx(
-        'flex gap-10 max-w-8xl px-8 w-full',
+        'flex gap-10 max-w-8xl px-8 w-full flex-col items-center pb-10 pt-32 md:flex-row md:pb-30 md:pt-56',
         className,
-        isMobile ? 'flex-col items-center pb-10 pt-32' : 'flex-row pb-30 pt-56'
       )}
     >
       <div className="flex flex-col gap-6 items-center justify-center">
-        <h1 className={clsx('font-bold', isMobile ? 'text-center text-h4' : 'text-start text-h2')}>{texts.hero.title}</h1>
-        <p className={clsx(isMobile ? 'text-body max-w-sm' : 'text-subtitle')}>{texts.hero.description}</p>
+        <h1 className='font-bold text-center text-h4 md:text-start md:text-h2'>
+          {texts.hero.title}
+        </h1>
+        <p className='text-body max-w-sm md:text-subtitle md:max-w-full'>
+          {texts.hero.description}
+        </p>
       </div>
-      <div className={clsx('flex', isMobile ? 'w-[296px]' : 'w-[571px]')}>
+      <div className='flex w-[296px] md:w-[571px]'>
         <Image
           src="https://repartear.com/illustration-hero.png"
           alt={assets.heroVector.alt}

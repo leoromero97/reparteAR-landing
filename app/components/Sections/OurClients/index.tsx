@@ -1,19 +1,15 @@
 import Image from "next/image";
-import clsx from "clsx";
 import { clients } from "@/constants/clients";
 import { texts } from "@/constants/texts";
-import useMobileDetect from "@/hooks/useMobileDetected";
 
 function OurClients() {
-  const isMobile = useMobileDetect();
-
   return (
-    <div className="flex flex-col max-w-8xl px-8 w-full gap-6 pt-10">
-      <span className={clsx(isMobile ? 'text-subtitle text-center' : 'text-h4 font-bold mb-6')}>
+    <div className="flex flex-col max-w-8xl px-8 w-full gap-6 pt-10 items-center md:items-start">
+      <span className='text-subtitle text-center md:text-h4 md:font-bold md:mb-6'>
         {texts.commons.theyTrustUs}
       </span>
-      <div className={clsx('flex w-full py-6 overflow-y-hidden px-2', isMobile ? 'overflow-scroll px-3 gap-4' : 'flex-wrap gap-14')}>
-        {clients.map(({ href, id, logo}) => (
+      <div className='flex w-full py-6 overflow-y-hidden px-2 md:flex-wrap gap-4 md:gap-14 md:overflow-hidden'>
+        {clients.map(({ href, id, logo }) => (
           <a
             href={href}
             target="_blank"
