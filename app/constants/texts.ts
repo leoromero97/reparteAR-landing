@@ -41,7 +41,7 @@ export const servicesTexts = {
         },
         step2: {
           number: '2',
-          text: 'Brindas las dos direcciones'
+          text: 'Brindas las direcciones'
         },
         step3: {
           number: '3',
@@ -53,7 +53,7 @@ export const servicesTexts = {
         },
         step5: {
           number: '5',
-          text: 'Las motos realizan el viaje',
+          text: 'Un repartidor realiza el viaje',
         },
         step6: {
           number: '6',
@@ -95,7 +95,7 @@ export const servicesTexts = {
         },
         step4: {
           number: '4',
-          text: 'Las motos retirar en los horarios definidos',
+          text: 'Las motos retiran en los horarios definidos',
         },
         step5: {
           number: '5',
@@ -103,7 +103,7 @@ export const servicesTexts = {
         },
         step6: {
           number: '6',
-          text: 'Se abona el servicio por quincena o mes',
+          text: 'Se abona el servicio por quincena',
         },
       },
     }
@@ -127,7 +127,7 @@ export const commonsTexts = {
   allRightsReserved: 'Todos los derechos reservados',
   dark: 'Oscuro',
   didYouLikeThisLandingPage: '¿Te gustó esta landing page?',
-  developmentBy: 'Desarrollado por Leonardo Esteban Gerbacio Romero',
+  developmentBy: 'Diseñado y desarrollado por Leonardo Esteban Gerbacio Romero',
   doYouHaveAnyDoubtWriteUs: '¿Tenés algunda duda? ¡Escribinos!',
   frequentQuestions: 'Preguntas frecuentes',
   light: 'Claro',
@@ -137,7 +137,7 @@ export const commonsTexts = {
   theme: 'Tema',
   techMessage: 'Estamos en el proceso de creación de nuestra propia plataforma para automatizar procesos internos',
   us: 'Nosotros',
-  usMessage: 'Actualmente somos un equipo de 4 personas con el sueño de seguir creciendo como emprendimiento y brindar más trabajo a más personas',
+  usMessage: 'Actualmente somos un equipo de 4 personas, con el sueño de seguir creciendo como emprendimiento y brindar trabajo a más personas',
 };
 
 export const notFoundTexts = {

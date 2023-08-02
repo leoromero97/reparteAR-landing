@@ -14,7 +14,9 @@ function NavDesktop() {
 
   return (
     <header className={clsx(
-      `flex items-center 
+      `hidden
+      md:flex 
+      items-center 
       justify-center 
       w-full 
       fixed z-10`,

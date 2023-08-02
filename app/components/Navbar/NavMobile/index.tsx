@@ -16,7 +16,7 @@ function NavMobile({ menuOpened, onClick }: INavMobileProps) {
 
   return (
     <header className={clsx(
-      'flex items-center justify-center w-full fixed z-10',
+      'flex items-center justify-center w-full fixed z-10 md:hidden',
       menuOpened && 'flex-col z-50 min-h-screen justify-between',
       isDark && 'bg-skyblue-800 text-skyblue-200',
       isLight && 'bg-white text-skyblue-900 shadow-drop-3',

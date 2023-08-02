@@ -1,23 +1,19 @@
 'use client';
 
-import { Suspense } from 'react';
 import clsx from 'clsx';
 import Button from '@/components/Button';
 import Footer from '@/components/Footer';
 import Hero from '@/components/Sections/Hero';
 import Navbar from '@/components/Navbar'
-import NavMobile from '@/components/Navbar/NavMobile';
 import Services from '@/components/Sections/Services';
 import Testimonials from '@/components/Sections/Testimonials';
 import UsSection from '@/components/Sections/UsSection';
 import SupportSection from '@/components/Sections/SupportSection';
 import { texts } from '@/constants/texts';
 import { externalLink } from '@/constants/messageExternal';
-import useMobileDetect from '@/hooks/useMobileDetected';
 import useTheme from '@/hooks/useTheme';
 
 export default function Home() {
-  const isMobile = useMobileDetect();
   const { isDark, isLight } = useTheme();
 
   return (
@@ -34,9 +30,7 @@ export default function Home() {
         isLight && 'bg-skyblue-white text-skyblue-900',
       )}
     >
-      <Suspense fallback={<NavMobile />}>
-        <Navbar isMobile={isMobile} />
-      </Suspense>
+      <Navbar />
       <Hero />
       <Services />
       <Testimonials />
