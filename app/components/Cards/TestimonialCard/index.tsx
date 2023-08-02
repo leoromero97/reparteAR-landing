@@ -1,6 +1,6 @@
 import clsx from "clsx";
-import { ITestomonialCardProps } from "./types";
 import useTheme from "@/hooks/useTheme";
+import { ITestomonialCardProps } from "./types";
 
 function TestimonialCard({ className, message, name, href }: ITestomonialCardProps) {
   const { isDark, isLight } = useTheme();
@@ -32,7 +32,7 @@ function TestimonialCard({ className, message, name, href }: ITestomonialCardPro
         className
       )}
     >
-      <p className="text-label lg:text-body">
+      <p className="text-label md:text-body">
         {customMessage}
       </p>
       <span className="text-body-extra-small md:text-label md:font-bold text-right">

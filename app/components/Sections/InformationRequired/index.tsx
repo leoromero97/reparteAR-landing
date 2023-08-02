@@ -3,11 +3,9 @@ import clsx from "clsx";
 import { assets } from "@/constants/assets";
 import { texts } from "@/constants/texts";
 import { deliveryRequiredInformation } from "@/constants/deliveryRequiredInformation";
-import useMobileDetect from "@/hooks/useMobileDetected";
 import useTheme from "@/hooks/useTheme";
 
 function InformationRequired() {
-  const isMobile = useMobileDetect();
   const { isDark, isLight } = useTheme();
 
   return (
@@ -17,11 +15,11 @@ function InformationRequired() {
         alt={assets.informationRequiredImage.alt}
         width={441}
         height={380}
-        className={clsx('rounded-xl shadow-drop-3 shrink-0', isMobile ? 'w-[296px]' : 'w-[540px]')}
+        className='rounded-xl shadow-drop-3 shrink-0 w-[296px] md:w-[540px]'
         unoptimized
       />
-      <div className={clsx('flex flex-col gap-6', isMobile ? 'items-center' : 'items-start')}>
-        <span className={clsx(isMobile ? 'text-subtitle text-center' : 'text-h4 font-bold mb-6')}>
+      <div className='flex flex-col gap-6 items-center md:items-start'>
+        <span className='text-subtitle text-center md:text-h4 md:font-bold md:mb-6'>
           {texts.services.neddedInformation.title}
         </span>
         <ul>
