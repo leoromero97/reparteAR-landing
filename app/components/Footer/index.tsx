@@ -7,7 +7,7 @@ import useTheme from "@/hooks/useTheme";
 function Footer() {
   const { isDark, isLight } = useTheme();
   const date = new Date();
-  const rightsReserved = `©`.concat(' ' + date.getFullYear().toString() + ' ' + texts.commons.allRightsReserved);
+  const rightsReserved = `©`.concat(' 2020 - ' + date.getFullYear().toString() + ' ' + texts.commons.allRightsReserved);
 
   return (
     <footer

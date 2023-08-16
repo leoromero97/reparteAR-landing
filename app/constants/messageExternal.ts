@@ -1,5 +1,5 @@
-export const messageExternal = `Hola reparteAR! Quiero realizar un pedido. Los datos son: \n\n
-- Dirección de salida: \n
+export const messageExternal = `Hola reparteAR! Quiero realizar un pedido. Los datos son: \n
+\n- Dirección de salida: \n
 - Barrio de salida: \n
 - Dirección de destino: \n
 - Barrio de destino: \n
@@ -12,4 +12,5 @@ export const messageExternal = `Hola reparteAR! Quiero realizar un pedido. Los d
 - Medida y peso aproximado: \n
 - Observaciones: \n`;
 
-export const externalLink = `https://wa.me/541164392829?text=${messageExternal}`
+export const externalLink = `https://wa.me/541164392829?text=${encodeURI(messageExternal)}`
+

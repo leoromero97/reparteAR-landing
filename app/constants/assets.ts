@@ -117,6 +117,10 @@ export const assets = {
     src: userLeo,
     alt: 'Foto del colaborador Leo',
   },
+  imageCharly: {
+    src: 'https://repartear.com/charly.png',
+    alt: 'Foto del colaborador Charly'
+  },
   illustrationBuild: {
     src: illustrationBuild,
     alt: 'Ilustracion del proyecto en construccion',
