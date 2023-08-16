@@ -14,6 +14,7 @@ export const collaborators = [
   },
   {
     id: '5',
+    href: 'https://www.linkedin.com/in/carlos-alberto-nu%C3%B1ez-29a510204/',
     image: {
       src: assets.imageCharly.src,
       alt: assets.imageCharly.alt,
