@@ -20,6 +20,7 @@ import illustrationBuild from '@/assets/illustrations/illustration-build.svg';
 import userJavi from '@/assets/users/user-javi.svg';
 import userCami from '@/assets/users/user-cami.svg';
 import userLeo from '@/assets/users/user-leo.svg';
+import userCharly from '@/assets/users/user-charly.svg';
 import illustrationWebSearching from '@/assets/illustrations/illustration-web-searching.svg';
 
 export const assets = {
@@ -116,6 +117,10 @@ export const assets = {
   imageLeo: {
     src: userLeo,
     alt: 'Foto del colaborador Leo',
+  },
+  imageCharly: {
+    src: userCharly,
+    alt: 'Foto del colaborador Charly'
   },
   illustrationBuild: {
     src: illustrationBuild,

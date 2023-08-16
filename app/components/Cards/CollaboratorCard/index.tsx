@@ -35,7 +35,7 @@ function CollaboratorCard({
         className)}
     >
       {image?.src ? (
-        <div className="w-20 h-20 md:w-[140px] md:h-[140px] flex ease-in-out">
+        <div className="w-20 h-20 md:w-[140px] md:h-[140px] flex ease-in-out text-center">
           <Image
             src={image.src}
             alt={image.alt}

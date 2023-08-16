@@ -9,10 +9,10 @@ function MessageTech() {
     <div
       className="flex flex-col items-center max-w-8xl px-8 w-full gap-12 md:gap-20 py-10">
       <div className='flex w-full items-center gap-12 flex-col text-center md:flex-row md:text-start'>
-        <span className="text-subtitle font-medium md:text-h3 md:font-bold">
+        <span className="text-subtitle font-medium lg:text-h3 lg:font-bold">
           {texts.commons.techMessage}
         </span>
-        <div className="flex w-u296 md:w-[580px] flex-shrink-0">
+        <div className="flex w-u296 lg:w-[580px] flex-shrink-0">
           <Image
             src={assets.illustrationBuild.src}
             alt={assets.illustrationBuild.alt}

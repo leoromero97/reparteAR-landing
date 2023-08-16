@@ -2,7 +2,7 @@ import { assets } from "./assets";
 
 export const collaborators = [
   {
-    id: '1',
+    id: '4',
     image: {
       src: assets.imageJavi.src,
       alt: assets.imageJavi.alt,
@@ -13,14 +13,26 @@ export const collaborators = [
     ],
   },
   {
-    id: '2',
-    name: 'Alvaro',
+    id: '5',
+    href: 'https://www.linkedin.com/in/carlos-alberto-nu%C3%B1ez-29a510204/',
+    image: {
+      src: assets.imageCharly.src,
+      alt: assets.imageCharly.alt,
+    },
+    name: 'Charly',
     roles: [
       'Repartidor',
     ],
   },
   {
     id: '3',
+    name: 'Álvaro',
+    roles: [
+      'Repartidor',
+    ],
+  },
+  {
+    id: '2',
     image: {
       src: assets.imageCami.src,
       alt: assets.imageCami.alt,
@@ -33,7 +45,7 @@ export const collaborators = [
     ],
   },
   {
-    id: '4',
+    id: '1',
     href: 'https://www.linkedin.com/in/leonardogerbacioromero/',
     image: {
       src: assets.imageLeo.src,
