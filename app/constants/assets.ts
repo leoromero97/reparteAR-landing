@@ -7,7 +7,6 @@ import logoSesytel from '@/assets/logos/logo-Sesytel-Solutions.svg';
 import logoTwoTwoTwo from '@/assets/logos/logo-Two-Two-Two.svg';
 import logoIntegralPrint from '@/assets/logos/logo-Integral-print.svg';
 import logoMancha from '@/assets/logos/logo-Mancha.svg';
-import logoQuiromed from '@/assets/logos/logo-QUIROMED.svg';
 import logoLexus from '@/assets/logos/logo-Lexus.svg';
 import logoMaro from '@/assets/logos/logo-MARO.svg';
 import logoAviano from '@/assets/logos/logo-aviano.svg';
@@ -16,6 +15,8 @@ import logoRoleta from '@/assets/logos/Roleta-Corp.svg';
 import logoRosaRomero from '@/assets/logos/logo-Rosa-Romero.svg';
 import logoRetificacionBetEl from '@/assets/logos/logo-Retificación-Bet-el.svg';
 import logoMacarenaAlzaga from '@/assets/logos/logo-Macarena-Alzaga.svg';
+import logoMercoPack from '@/assets/logos/logo-MercoPack.svg';
+import logoGraficaD2 from '@/assets/logos/logo-GraficaD2.svg';
 import illustrationBuild from '@/assets/illustrations/illustration-build.svg';
 import userJavi from '@/assets/users/user-javi.svg';
 import userCami from '@/assets/users/user-cami.svg';
@@ -61,10 +62,6 @@ export const assets = {
     src: logoMancha,
     alt: 'Logotipo de Mancha',
   },
-  logoQuiromed: {
-    src: logoQuiromed,
-    alt: 'Logotipo de QUIROMED SACIF',
-  },
   logoLexus: {
     src: logoLexus,
     alt: 'Logotipo de Lexus editorial',
@@ -104,6 +101,14 @@ export const assets = {
   logoRoleta: {
     src: logoRoleta,
     alt: 'Logotipo de Roleta Corp',
+  },
+  logoMercoPack: {
+    src: logoMercoPack,
+    alt: 'Logotipo de Merco Pack',
+  },
+  logoGraficaD2: {
+    src: logoGraficaD2,
+    alt: 'Logotipo de Gráfica D2',
   },
   imageJavi: {
     src: userJavi,

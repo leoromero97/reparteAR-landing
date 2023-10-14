@@ -30,7 +30,7 @@ function CollaboratorCard({
         items-center
         cursor-not-allowed`,
         isLight && 'bg-white shadow-drop-3',
-        isDark && 'bg-skyblue-800',
+        isDark && 'bg-skyblue-80',
         href && 'hover:cursor-pointer hover:ring-skyblue hover:ring-[5px]',
         className)}
     >

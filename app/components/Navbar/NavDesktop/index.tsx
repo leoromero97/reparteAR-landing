@@ -20,8 +20,8 @@ function NavDesktop() {
       justify-center 
       w-full 
       fixed z-10`,
-      isDark && 'bg-skyblue-800 text-skyblue-200',
-      isLight && 'bg-white text-skyblue-900 shadow-drop-3',
+      isDark && 'bg-skyblue-80 text-skyblue-20',
+      isLight && 'bg-white text-skyblue-90 shadow-drop-3',
     )}>
       <div className='max-w-8xl flex items-center justify-between w-full px-8 py-7'>
         <Link href="/" title='Ir al Home' className="w-[261px]">
@@ -56,8 +56,8 @@ function NavDesktop() {
                   h-12 
                   w-34 
                   text-center`,
-                  isDark && 'hover:bg-skyblue-900',
-                  isLight && 'hover:bg-skyblue-100',
+                  isDark && 'hover:bg-skyblue-90',
+                  isLight && 'hover:bg-skyblue-10',
                 )}
               >
                 {navItem.title}

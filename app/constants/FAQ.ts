@@ -12,7 +12,7 @@ export const FAQs= [
   {
     id: 'whatAreYourOfficeHours',
     question: '¿Cuáles son sus horarios de atención?',
-    answer: 'De 8 a 19 horas.',
+    answer: 'De 8 a 18 horas.',
   },
   {
     id: 'untilWhatTimeCanIrequestARide',

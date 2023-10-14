@@ -28,7 +28,7 @@ function TestimonialCard({ className, message, name, href }: ITestomonialCardPro
         ease-in-out 
         duration-300`,
         isLight && 'bg-white shadow-drop-3',
-        isDark && 'bg-skyblue-800',
+        isDark && 'bg-skyblue-80',
         className
       )}
     >

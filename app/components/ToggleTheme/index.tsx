@@ -22,7 +22,7 @@ function ToggleTheme({ className, handleToggleTheme, isDark, isLight, theme }: T
         rounded-full
         ease-in-out
         duration-100`,
-        theme && isDark && 'pl-3 border-r-0 bg-skyblue-900',
+        theme && isDark && 'pl-3 border-r-0 bg-skyblue-90',
         theme && isLight && 'pr-3 border-l-0 bg-skyblue-white',
         theme ? 'border gap-2' : 'p-0',
         className
@@ -37,12 +37,12 @@ function ToggleTheme({ className, handleToggleTheme, isDark, isLight, theme }: T
           rounded-full
           h-12 
           w-12
-          text-skyblue-600
+          text-skyblue-60
           ease-in-out
           duration-300
           `,
-          isDark && 'bg-skyblue-200 order-2 hover:bg-skyblue-900',
-          isLight && 'bg-skyblue-900 order-1 hover:bg-skyblue-100',
+          isDark && 'bg-skyblue-20 order-2 hover:bg-skyblue-90',
+          isLight && 'bg-skyblue-90 order-1 hover:bg-skyblue-10',
         )}
       >
         <Icon icon={isDark ? 'Sun' : 'Moon'} />

@@ -33,8 +33,8 @@ function InformationRequired() {
                     rounded-full 
                     shrink-0 
                     flex`,
-                    isLight && 'bg-skyblue-900',
-                    isDark && 'bg-skyblue-200',
+                    isLight && 'bg-skyblue-90',
+                    isDark && 'bg-skyblue-20',
                   )}
                 ></span>
                 <span className="text-label font-medium md:text-body">{information.text}</span>
@@ -46,8 +46,8 @@ function InformationRequired() {
                       h-4 
                       w-[1px] 
                       flex`,
-                      isLight && 'bg-skyblue-900',
-                      isDark && 'bg-skyblue-200',
+                      isLight && 'bg-skyblue-90',
+                      isDark && 'bg-skyblue-20',
                     )}
                   ></span>
                 </div>

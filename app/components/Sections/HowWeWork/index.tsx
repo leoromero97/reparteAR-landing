@@ -32,7 +32,7 @@ function HowWeWork() {
                 if (categoryStep.id === idSelected)
                   return (
                     <li key={steps.id} className="flex gap-3 items-center">
-                      <span className="h-8 w-8 p-1 text-center text-label font-bold bg-skyblue-600 text-skyblue-100 shrink-0 rounded-full flex flex-col items-center justify-center">
+                      <span className="h-8 w-8 p-1 text-center text-label font-bold bg-skyblue-60 text-skyblue-10 shrink-0 rounded-full flex flex-col items-center justify-center">
                         {steps.number}
                       </span>
                       <span className="text-label">
@@ -59,7 +59,7 @@ function HowWeWork() {
                 rounded-xl 
                 w-u462`,
               isLight && 'bg-white shadow-drop-3',
-              isDark && 'bg-skyblue-800',
+              isDark && 'bg-skyblue-80',
             )}
           >
             <span className="text-subtitle font-bold">
@@ -68,7 +68,7 @@ function HowWeWork() {
             <ul className="flex flex-col gap-4 w-full">
               {category.steps.map((stepDescription) => (
                 <li key={stepDescription.id} className="flex items-center gap-3">
-                  <span className="h-8 w-8 p-1 text-center text-label font-bold bg-skyblue-600 text-skyblue-100 shrink-0 rounded-full flex flex-col items-center justify-center">
+                  <span className="h-8 w-8 p-1 text-center text-label font-bold bg-skyblue-60 text-skyblue-10 shrink-0 rounded-full flex flex-col items-center justify-center">
                     {stepDescription.number}
                   </span>
                   <span className="text-body">{stepDescription.text}</span>

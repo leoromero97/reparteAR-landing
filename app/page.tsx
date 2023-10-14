@@ -26,8 +26,8 @@ export default function Home() {
         h-auto 
         min-h-screen
         `,
-        isDark && 'bg-skyblue-900 text-skyblue-200',
-        isLight && 'bg-skyblue-white text-skyblue-900',
+        isDark && 'bg-skyblue-90 text-skyblue-20',
+        isLight && 'bg-skyblue-white text-skyblue-90',
       )}
     >
       <Navbar />

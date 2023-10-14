@@ -2,6 +2,13 @@ import { assets } from "./assets";
 
 export const collaborators = [
   {
+    id: '5',
+    name: 'Ari',
+    roles: [
+      'Repartidor',
+    ],
+  },
+  {
     id: '4',
     image: {
       src: assets.imageJavi.src,
