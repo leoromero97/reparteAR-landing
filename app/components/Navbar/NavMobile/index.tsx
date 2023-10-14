@@ -41,11 +41,11 @@ function NavMobile({ menuOpened, onClick }: INavMobileProps) {
         </div>
       </div>
       {menuOpened && (
-        <ul
+        <nav
           className={clsx(
             'flex items-center gap-2 flex-col w-full font-normal flex-1 justify-between',
           )}>
-          <nav className={clsx("flex w-full", 'flex-col flex-shrink-0 pt-20')}>
+          <ul className={clsx("flex w-full", 'flex-col flex-shrink-0 pt-20')}>
             {navbarLinks.map((navItem) => (
               <li
                 key={navItem.id}
@@ -82,7 +82,7 @@ function NavMobile({ menuOpened, onClick }: INavMobileProps) {
               theme={labelTheme}
               className="mx-8 my-14"
             />
-          </nav>
+          </ul>
           <div className="flex justify-center w-full pb-14 px-8 gap-8">
             <Button
               text={texts.actions.requestTrip}
@@ -92,7 +92,7 @@ function NavMobile({ menuOpened, onClick }: INavMobileProps) {
               to={externalLink}
             />
           </div>
-        </ul>
+        </nav>
       )}
     </header>
   );
