@@ -13,4 +13,3 @@ export const messageExternal = `Hola reparteAR! Quiero realizar un pedido. Los d
 - Observaciones: \n`;
 
 export const externalLink = `https://wa.me/541164392829?text=${encodeURI(messageExternal)}`
-

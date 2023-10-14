@@ -16,8 +16,8 @@ function Footer() {
       flex 
       flex-col 
       items-center`,
-        isLight && 'bg-skyblue-200',
-        isDark && 'bg-skyblue-800',
+        isLight && 'bg-skyblue-20',
+        isDark && 'bg-skyblue-80',
       )}
     >
       <div className={clsx(

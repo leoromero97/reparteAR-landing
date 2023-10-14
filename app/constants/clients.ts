@@ -59,10 +59,10 @@ export const clients = [
   },
   {
     id: '8',
-    href: 'https://quiromed.com.ar/',
+    href: 'https://www.mercopacksrl.com/',
     logo: {
-      src: assets.logoQuiromed.src,
-      alt: assets.logoQuiromed.alt,
+      src: assets.logoMercoPack.src,
+      alt: assets.logoMercoPack.alt,
     },
   },
   {
@@ -135,6 +135,14 @@ export const clients = [
     logo: {
       src: assets.logoRoleta.src,
       alt: assets.logoRoleta.alt,
+    },
+  },
+  {
+    id: '18',
+    href: 'https://graficad2.negocio.site/',
+    logo: {
+      src: assets.logoGraficaD2.src,
+      alt: assets.logoGraficaD2.alt,
     },
   },
 ];

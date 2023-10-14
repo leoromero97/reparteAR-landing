@@ -18,8 +18,8 @@ function NavMobile({ menuOpened, onClick }: INavMobileProps) {
     <header className={clsx(
       'flex items-center justify-center w-full fixed z-10 md:hidden',
       menuOpened && 'flex-col z-50 min-h-screen justify-between',
-      isDark && 'bg-skyblue-800 text-skyblue-200',
-      isLight && 'bg-white text-skyblue-900 shadow-drop-3',
+      isDark && 'bg-skyblue-80 text-skyblue-20',
+      isLight && 'bg-white text-skyblue-90 shadow-drop-3',
     )}>
       <div className='max-w-8xl flex items-center justify-between w-full px-8 py-7 '>
         <Link href="/" title='Ir al Home' className="w-[142px]">
@@ -67,8 +67,8 @@ function NavMobile({ menuOpened, onClick }: INavMobileProps) {
                     duration-100 
                     py-4 
                     px-8`,
-                    isDark && 'hover:bg-skyblue-900',
-                    isLight && 'hover:bg-skyblue-100',
+                    isDark && 'hover:bg-skyblue-90',
+                    isLight && 'hover:bg-skyblue-10',
                   )}
                 >
                   {navItem.title}

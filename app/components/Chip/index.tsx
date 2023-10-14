@@ -18,14 +18,14 @@ function Chip({ className, isActive = false, onclick, text }: IChipProps) {
         text-label
         `,
         className,
-        isLight && !isActive && 'hover:bg-skyblue-300',
-        isDark && !isActive && 'hover:bg-skyblue-800',
+        isLight && !isActive && 'hover:bg-skyblue-30',
+        isDark && !isActive && 'hover:bg-skyblue-80',
         isActive && isLight && !isDark &&
-          'bg-skyblue-600 hover:cursor-not-allowed text-skyblue-100 border-skyblue-100',
-          !isActive && isLight && !isDark && 'border-skyblue-600 text-skyblue-600 bg-skyblue-100',
+          'bg-skyblue-60 hover:cursor-not-allowed text-skyblue-10 border-skyblue-10',
+          !isActive && isLight && !isDark && 'border-skyblue-60 text-skyblue-60 bg-skyblue-10',
           isActive && isDark && !isLight &&
-          'bg-skyblue-600 hover:cursor-not-allowed text-skyblue-100 border-skyblue-200',
-          !isActive && isDark && !isLight && 'border-skyblue-600 text-skyblue-600 bg-skyblue-900',
+          'bg-skyblue-60 hover:cursor-not-allowed text-skyblue-10 border-skyblue-20',
+          !isActive && isDark && !isLight && 'border-skyblue-60 text-skyblue-60 bg-skyblue-90',
       )}
       onClick={onclick}
     >

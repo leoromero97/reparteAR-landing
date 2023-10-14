@@ -34,12 +34,12 @@ function Accordion({
       ref={wrapperRef}
       className={clsx(
         'flex flex-col rounded-lg py-2 px-3 gap-2 text-start ease-in-out duration-100 ',
-        open && isLight && !isDark  && 'bg-skyblue-200',
+        open && isLight && !isDark  && 'bg-skyblue-20',
         !open && isLight && !isDark  && 'bg-white h-fit',
-        isLight && 'hover:bg-skyblue-200 shadow-drop-1',
-        open && isDark && !isLight && 'bg-skyblue-800 border-none',
-        !open && isDark && !isLight  && 'bg-skyblue-900 h-fit border border-skyblue-800 focus:border-skyblue-800',
-        isDark && 'hover:bg-skyblue-800',
+        isLight && 'hover:bg-skyblue-20 shadow-drop-1',
+        open && isDark && !isLight && 'bg-skyblue-80 border-none',
+        !open && isDark && !isLight  && 'bg-skyblue-90 h-fit border border-skyblue-80 focus:border-skyblue-80',
+        isDark && 'hover:bg-skyblue-80',
         className,
       )}
       key={id} onClick={() => {
