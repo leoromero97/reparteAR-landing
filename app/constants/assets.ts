@@ -1,133 +1,140 @@
-import logoReparteAR from '@/assets/logos/logo-reparteAR.svg';
-import logoAlmamia from '@/assets/logos/Almamia.svg';
-import logoDaian from '@/assets/logos/Daian.svg';
-import logoTiendaBarbados from '@/assets/logos/logo-Tienda-Barbados.svg';
-import logoPopus from '@/assets/logos/logo-Popus.svg';
-import logoSesytel from '@/assets/logos/logo-Sesytel-Solutions.svg';
-import logoTwoTwoTwo from '@/assets/logos/logo-Two-Two-Two.svg';
-import logoIntegralPrint from '@/assets/logos/logo-Integral-print.svg';
-import logoMancha from '@/assets/logos/logo-Mancha.svg';
-import logoLexus from '@/assets/logos/logo-Lexus.svg';
-import logoMaro from '@/assets/logos/logo-MARO.svg';
-import logoAviano from '@/assets/logos/logo-aviano.svg';
-import logoPQC from '@/assets/logos/logo-PQC.svg';
-import logoRoleta from '@/assets/logos/Roleta-Corp.svg';
-import logoRosaRomero from '@/assets/logos/logo-Rosa-Romero.svg';
-import logoRetificacionBetEl from '@/assets/logos/logo-Retificación-Bet-el.svg';
-import logoMacarenaAlzaga from '@/assets/logos/logo-Macarena-Alzaga.svg';
-import logoMercoPack from '@/assets/logos/logo-MercoPack.svg';
-import logoGraficaD2 from '@/assets/logos/logo-GraficaD2.svg';
-import illustrationBuild from '@/assets/illustrations/illustration-build.svg';
-import userJavi from '@/assets/users/user-javi.svg';
-import userCami from '@/assets/users/user-cami.svg';
-import userLeo from '@/assets/users/user-leo.svg';
-import illustrationWebSearching from '@/assets/illustrations/illustration-web-searching.svg';
+import logoReparteAR from "@/assets/logos/logo-reparteAR.svg";
+import logoAlmamia from "@/assets/logos/Almamia.svg";
+import logoDaian from "@/assets/logos/Daian.svg";
+import logoTiendaBarbados from "@/assets/logos/logo-Tienda-Barbados.svg";
+import logoPopus from "@/assets/logos/logo-Popus.svg";
+import logoSesytel from "@/assets/logos/logo-Sesytel-Solutions.svg";
+import logoTwoTwoTwo from "@/assets/logos/logo-Two-Two-Two.svg";
+import logoIntegralPrint from "@/assets/logos/logo-Integral-print.svg";
+import logoMancha from "@/assets/logos/logo-Mancha.svg";
+import logoLexus from "@/assets/logos/logo-Lexus.svg";
+import logoMaro from "@/assets/logos/logo-MARO.svg";
+import logoAviano from "@/assets/logos/logo-aviano.svg";
+import logoPQC from "@/assets/logos/logo-PQC.svg";
+import logoRoleta from "@/assets/logos/Roleta-Corp.svg";
+import logoRosaRomero from "@/assets/logos/logo-Rosa-Romero.svg";
+import logoRetificacionBetEl from "@/assets/logos/logo-Retificación-Bet-el.svg";
+import logoMacarenaAlzaga from "@/assets/logos/logo-Macarena-Alzaga.svg";
+import logoMercoPack from "@/assets/logos/logo-MercoPack.svg";
+import logoGraficaD2 from "@/assets/logos/logo-GraficaD2.svg";
+import illustrationBuild from "@/assets/illustrations/illustration-build.svg";
+import userCami from "@/assets/users/user-cami.svg";
+import illustrationWebSearching from "@/assets/illustrations/illustration-web-searching.svg";
 
 export const assets = {
   logoReparteAR: {
     src: logoReparteAR,
-    alt: 'Logotipo de reparteAR',
+    alt: "Logotipo de reparteAR",
     dimensions: {
       height: 24,
       width: 142.52,
-    }
+    },
   },
   heroVector: {
-    alt: 'Ilustracion personalizada de reparteAR',
+    alt: "Ilustracion personalizada de reparteAR",
   },
   informationRequiredImage: {
-    alt: 'Imagen ilustrativa de una conversacion con la informacion necesaria para un viaje exitoso',
+    src: "https://firebasestorage.googleapis.com/v0/b/repartear-admin.appspot.com/o/Example%20msj%20wpp.jpg?alt=media&token=29084afe-44ee-407a-a79a-915b3603c123",
+    alt: "Imagen ilustrativa de una conversacion con la informacion necesaria para un viaje exitoso",
   },
   logoTiendaBarbados: {
     src: logoTiendaBarbados,
-    alt: 'Logotipo de Tienda Barbados',
+    alt: "Logotipo de Tienda Barbados",
   },
   logoPopus: {
     src: logoPopus,
-    alt: 'Logotipo de Popus',
+    alt: "Logotipo de Popus",
   },
   logoSesytel: {
     src: logoSesytel,
-    alt: 'Logotipo de Sesytel Solutions',
+    alt: "Logotipo de Sesytel Solutions",
   },
   logoTwoTwoTwo: {
     src: logoTwoTwoTwo,
-    alt: 'Logotipo de Two Two Two',
+    alt: "Logotipo de Two Two Two",
   },
   logoIntegralPrint: {
     src: logoIntegralPrint,
-    alt: 'Logotipo de Integra Print',
+    alt: "Logotipo de Integra Print",
   },
   logoMancha: {
     src: logoMancha,
-    alt: 'Logotipo de Mancha',
+    alt: "Logotipo de Mancha",
   },
   logoLexus: {
     src: logoLexus,
-    alt: 'Logotipo de Lexus editorial',
+    alt: "Logotipo de Lexus editorial",
   },
   logoMaro: {
     src: logoMaro,
-    alt: 'Logotipo de MARO clothes',
+    alt: "Logotipo de MARO clothes",
   },
   logoAviano: {
     src: logoAviano,
-    alt: 'Logotipo de AVIANO',
+    alt: "Logotipo de AVIANO",
   },
   logoPQC: {
     src: logoPQC,
-    alt: 'Logotipo de PQC',
+    alt: "Logotipo de PQC",
   },
   logoRosaRomero: {
     src: logoRosaRomero,
-    alt: 'Logotipo de Rosa Romero Estetica',
+    alt: "Logotipo de Rosa Romero Estetica",
   },
   logoRetificacionBetEl: {
     src: logoRetificacionBetEl,
-    alt: 'Logotipo de Retificacion Bet-el',
+    alt: "Logotipo de Retificacion Bet-el",
   },
   logoMacarenaAlzaga: {
     src: logoMacarenaAlzaga,
-    alt: 'Logotipo de Macarena Alzaga',
+    alt: "Logotipo de Macarena Alzaga",
   },
   logoAlmamia: {
     src: logoAlmamia,
-    alt: 'Logotipo de Almamia',
+    alt: "Logotipo de Almamia",
   },
   logoDaian: {
     src: logoDaian,
-    alt: 'Logotipo de Remises Daian',
+    alt: "Logotipo de Remises Daian",
   },
   logoRoleta: {
     src: logoRoleta,
-    alt: 'Logotipo de Roleta Corp',
+    alt: "Logotipo de Roleta Corp",
   },
   logoMercoPack: {
     src: logoMercoPack,
-    alt: 'Logotipo de Merco Pack',
+    alt: "Logotipo de Merco Pack",
   },
   logoGraficaD2: {
     src: logoGraficaD2,
-    alt: 'Logotipo de Gráfica D2',
+    alt: "Logotipo de Gráfica D2",
   },
   imageJavi: {
-    src: userJavi,
-    alt: 'Foto del colaborador Javier',
+    src: "https://firebasestorage.googleapis.com/v0/b/repartear-admin.appspot.com/o/Javier%20Barrios.png?alt=media&token=a0275705-bfd9-4f5b-8be2-e3652b0c574d",
+    alt: "Foto del colaborador Javier",
   },
   imageCami: {
     src: userCami,
-    alt: 'Foto de la colaboradora Cami',
+    alt: "Foto de la colaboradora Cami",
   },
   imageLeo: {
-    src: userLeo,
-    alt: 'Foto del colaborador Leo',
+    src: "https://firebasestorage.googleapis.com/v0/b/repartear-admin.appspot.com/o/Leo.png?alt=media&token=fd72faa7-854a-4deb-8b71-a0ebda8f8555",
+    alt: "Foto del colaborador Leo",
+  },
+  imageAlvaro: {
+    src: "https://firebasestorage.googleapis.com/v0/b/repartear-admin.appspot.com/o/Alvaro%20Sanchez.png?alt=media&token=1d3524ec-5e54-466e-a88a-a8e823cecf83",
+    alt: "Foto del colaborador Álvaro",
+  },
+  imagePedrito: {
+    src: "https://firebasestorage.googleapis.com/v0/b/repartear-admin.appspot.com/o/Pedrito%20Laura.png?alt=media&token=41a901d9-ffa5-4781-a2bc-fdf0be2e147e",
+    alt: "Foto del colaborador Pedrito",
   },
   illustrationBuild: {
     src: illustrationBuild,
-    alt: 'Ilustracion del proyecto en construccion',
+    alt: "Ilustracion del proyecto en construccion",
   },
   illustrationWebSearching: {
     src: illustrationWebSearching,
-    alt: 'Ilustracion de persona buscando una web',
+    alt: "Ilustracion de persona buscando una web",
   },
 };
