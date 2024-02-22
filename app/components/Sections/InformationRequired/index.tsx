@@ -11,7 +11,7 @@ function InformationRequired() {
   return (
     <div className="flex flex-col md:flex-row-reverse items-center max-w-8xl px-8 w-full gap-6 py-10 justify-between">
       <Image
-        src="https://repartear.com/Example-msj-wpp.jpg"
+        src={assets.informationRequiredImage.src}
         alt={assets.informationRequiredImage.alt}
         width={441}
         height={380}
