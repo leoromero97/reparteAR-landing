@@ -19,6 +19,11 @@ import logoMercoPack from "@/assets/logos/logo-MercoPack.svg";
 import logoGraficaD2 from "@/assets/logos/logo-GraficaD2.svg";
 import illustrationBuild from "@/assets/illustrations/illustration-build.svg";
 import userCami from "@/assets/users/user-cami.svg";
+import userJavi from '@/assets/users/user-javi.svg';
+import userLeo from '@/assets/users/user-leo.svg';
+import userAlvaro from '@/assets/users/user-alvaro.svg';
+import userPedro from '@/assets/users/user-pedro.svg';
+
 import illustrationWebSearching from "@/assets/illustrations/illustration-web-searching.svg";
 
 export const assets = {
@@ -110,7 +115,7 @@ export const assets = {
     alt: "Logotipo de Gráfica D2",
   },
   imageJavi: {
-    src: "https://firebasestorage.googleapis.com/v0/b/repartear-admin.appspot.com/o/Javier%20Barrios.png?alt=media&token=a0275705-bfd9-4f5b-8be2-e3652b0c574d",
+    src: userJavi,
     alt: "Foto del colaborador Javier",
   },
   imageCami: {
@@ -118,15 +123,15 @@ export const assets = {
     alt: "Foto de la colaboradora Cami",
   },
   imageLeo: {
-    src: "https://firebasestorage.googleapis.com/v0/b/repartear-admin.appspot.com/o/Leo.png?alt=media&token=fd72faa7-854a-4deb-8b71-a0ebda8f8555",
+    src: userLeo,
     alt: "Foto del colaborador Leo",
   },
   imageAlvaro: {
-    src: "https://firebasestorage.googleapis.com/v0/b/repartear-admin.appspot.com/o/Alvaro%20Sanchez.png?alt=media&token=1d3524ec-5e54-466e-a88a-a8e823cecf83",
+    src: userAlvaro,
     alt: "Foto del colaborador Álvaro",
   },
   imagePedrito: {
-    src: "https://firebasestorage.googleapis.com/v0/b/repartear-admin.appspot.com/o/Pedrito%20Laura.png?alt=media&token=41a901d9-ffa5-4781-a2bc-fdf0be2e147e",
+    src: userPedro,
     alt: "Foto del colaborador Pedrito",
   },
   illustrationBuild: {
