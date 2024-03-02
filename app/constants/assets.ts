@@ -13,7 +13,7 @@ import logoAviano from "@/assets/logos/logo-aviano.svg";
 import logoPQC from "@/assets/logos/logo-PQC.svg";
 import logoRoleta from "@/assets/logos/Roleta-Corp.svg";
 import logoRosaRomero from "@/assets/logos/logo-Rosa-Romero.svg";
-import logoRetificacionBetEl from "@/assets/logos/logo-Retificación-Bet-el.svg";
+import logoRetificacionBetEl from "@/assets/logos/logo-Retificacion-Bet-el.svg";
 import logoMacarenaAlzaga from "@/assets/logos/logo-Macarena-Alzaga.svg";
 import logoMercoPack from "@/assets/logos/logo-MercoPack.svg";
 import logoGraficaD2 from "@/assets/logos/logo-GraficaD2.svg";
@@ -23,7 +23,6 @@ import userJavi from '@/assets/users/user-javi.svg';
 import userLeo from '@/assets/users/user-leo.svg';
 import userAlvaro from '@/assets/users/user-alvaro.svg';
 import userPedro from '@/assets/users/user-pedro.svg';
-
 import illustrationWebSearching from "@/assets/illustrations/illustration-web-searching.svg";
 
 export const assets = {

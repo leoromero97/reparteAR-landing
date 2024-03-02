@@ -13,6 +13,7 @@ const poppins = Poppins({
 })
 
 export const metadata = {
+  metadataBase: new URL('https://repartear.com'),
   title: 'reparteAR',
   description: 'Landing page de reparteAR - Servicio de moto mensajería y envíos en CABA y GBA',
   keywords: ['Moto', 'Mensajería', 'Logística', 'Envíos', 'CABA', 'GBA', 'Capital Federal', 'Mercado Envíos Flex'],
