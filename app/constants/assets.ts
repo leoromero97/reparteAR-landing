@@ -22,8 +22,8 @@ import userCami from "@/assets/users/user-cami.svg";
 import userJavi from '@/assets/users/user-javi.svg';
 import userLeo from '@/assets/users/user-leo.svg';
 import userAlvaro from '@/assets/users/user-alvaro.svg';
-import userPedro from '@/assets/users/user-pedro.svg';
 import illustrationWebSearching from "@/assets/illustrations/illustration-web-searching.svg";
+import illustrationHero from '@/assets/illustrations/illustration-hero_landing.svg'
 
 export const assets = {
   logoReparteAR: {
@@ -34,7 +34,8 @@ export const assets = {
       width: 142.52,
     },
   },
-  heroVector: {
+  illustrationHero: {
+    src: illustrationHero,
     alt: "Ilustracion personalizada de reparteAR",
   },
   informationRequiredImage: {
@@ -128,10 +129,6 @@ export const assets = {
   imageAlvaro: {
     src: userAlvaro,
     alt: "Foto del colaborador Álvaro",
-  },
-  imagePedrito: {
-    src: userPedro,
-    alt: "Foto del colaborador Pedrito",
   },
   illustrationBuild: {
     src: illustrationBuild,

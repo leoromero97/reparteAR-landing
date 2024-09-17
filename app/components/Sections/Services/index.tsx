@@ -14,13 +14,13 @@ function Services() {
         <span className='text-subtitle font-bold sm:text-center md:text-h3 md:font-bold md:mb-6'>
           {texts.services.titleServices}
         </span>
-        <div
-          className='flex w-full py-6 overflow-y-hidden overflow-scroll gap-4 px-3 md:flex-wrap md:gap-10 md:justify-between md:overflow-hidden'
+        <ul
+          className='flex w-full py-6 overflow-y-hidden overflow-scroll gap-4 px-3 lg:grid md:gap-10 lg:overflow-hidden lg:grid-cols-5 lg:place-items-center'
         >
           {services.map(({ icon, id, title }) => (
             <ServiceCard key={id} icon={icon} title={title} className='w-36 md:w-52' />
           ))}
-        </div>
+        </ul>
       </div>
       <HowWeWork />
       <InformationRequired />

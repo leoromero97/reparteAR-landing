@@ -2,20 +2,6 @@ import { assets } from "./assets";
 
 export const collaborators = [
   {
-    id: "6",
-    image: {
-      src: assets.imagePedrito.src,
-      alt: assets.imagePedrito.alt,
-    },
-    name: "Pedrito",
-    roles: ["Repartidor"],
-  },
-  {
-    id: "5",
-    name: "Chris",
-    roles: ["Repartidor"],
-  },
-  {
     id: "4",
     image: {
       src: assets.imageJavi.src,
@@ -31,6 +17,21 @@ export const collaborators = [
       alt: assets.imageAlvaro.alt,
     },
     name: "Álvaro",
+    roles: ["Repartidor"],
+  },
+  {
+    id: "7",
+    name: "Rodri",
+    roles: ["Repartidor"],
+  },
+  {
+    id: "6",
+    name: "Pedrito",
+    roles: ["Repartidor"],
+  },
+  {
+    id: "5",
+    name: "Chris",
     roles: ["Repartidor"],
   },
   {

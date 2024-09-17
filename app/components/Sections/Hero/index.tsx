@@ -26,12 +26,12 @@ function Hero({ className }: IHeroProps) {
       </div>
       <div className='flex w-[296px] md:w-[571px]'>
         <Image
-          src="https://repartear.com/illustration-hero.png"
-          alt={assets.heroVector.alt}
+          src={assets.illustrationHero.src}
+          alt={assets.illustrationHero.alt}
           priority
           className="object-cover"
-          width={571}
-          height={580}
+          width={480}
+          height={480}
           unoptimized
         />
       </div>

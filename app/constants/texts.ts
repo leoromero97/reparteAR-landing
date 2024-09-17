@@ -1,3 +1,5 @@
+import { collaborators } from "./collaborators";
+
 export const actionsTexts = {
   requestTrip: 'Pedir envío',
   makeInquiry: 'Realizar consulta',
@@ -137,7 +139,7 @@ export const commonsTexts = {
   theme: 'Tema',
   techMessage: 'Estamos en el proceso de creación de nuestra propia plataforma para automatizar procesos internos',
   us: 'Nosotros',
-  usMessage: 'Actualmente somos un equipo de 6 personas, con el sueño de seguir creciendo como emprendimiento y brindar trabajo a más personas',
+  usMessage: `Actualmente somos un equipo de ${collaborators.length} personas, con el sueño de seguir creciendo como emprendimiento y brindar trabajo a más personas`,
 };
 
 export const notFoundTexts = {

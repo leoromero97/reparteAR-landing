@@ -21,11 +21,11 @@ function Chip({ className, isActive = false, onclick, text }: IChipProps) {
         isLight && !isActive && 'hover:bg-skyblue-30',
         isDark && !isActive && 'hover:bg-skyblue-80',
         isActive && isLight && !isDark &&
-          'bg-skyblue-60 hover:cursor-not-allowed text-skyblue-10 border-skyblue-10',
-          !isActive && isLight && !isDark && 'border-skyblue-60 text-skyblue-60 bg-skyblue-10',
+          'bg-skyblue-80 hover:cursor-not-allowed text-skyblue-10 border-skyblue-10',
+          !isActive && isLight && !isDark && 'border-skyblue-80 text-skyblue-80 bg-skyblue-10',
           isActive && isDark && !isLight &&
-          'bg-skyblue-60 hover:cursor-not-allowed text-skyblue-10 border-skyblue-20',
-          !isActive && isDark && !isLight && 'border-skyblue-60 text-skyblue-60 bg-skyblue-90',
+          'bg-skyblue-80 hover:cursor-not-allowed text-skyblue-10 border-skyblue-20',
+          !isActive && isDark && !isLight && 'border-skyblue-80 text-skyblue-80 bg-skyblue-90',
       )}
       onClick={onclick}
     >

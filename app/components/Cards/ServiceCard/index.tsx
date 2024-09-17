@@ -7,7 +7,7 @@ function ServiceCard({ className, icon, title }: IServiceCardProps) {
   const { isDark, isLight } = useTheme();
 
   return (
-    <div
+    <li
       className={clsx(
         'flex flex-col items-center shrink-0 gap-4 py-4 px-2 lg:px-6 rounded-xl text-center',
         className,
@@ -18,7 +18,7 @@ function ServiceCard({ className, icon, title }: IServiceCardProps) {
       <span className='text-label font-medium md:text-body md:font-semibold'>
         {title}
       </span>
-    </div>
+    </li>
   );
 }
 
