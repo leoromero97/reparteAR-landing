@@ -7,7 +7,6 @@ import Hero from '@/components/Sections/Hero';
 import Navbar from '@/components/Navbar'
 import Services from '@/components/Sections/Services';
 import Testimonials from '@/components/Sections/Testimonials';
-import UsSection from '@/components/Sections/UsSection';
 import SupportSection from '@/components/Sections/SupportSection';
 import { texts } from '@/constants/texts';
 import { externalLink } from '@/constants/messageExternal';
@@ -34,7 +33,6 @@ export default function Home() {
       <Hero />
       <Services />
       <Testimonials />
-      <UsSection />
       <SupportSection />
       <div className="flex md:hidden justify-center w-full py-2 px-8 fixed top-[86%] z-30">
         <Button
